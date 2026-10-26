@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>who owns your news??</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1><a href="/" id="home">who owns your news??</a></h1>
+      <form id="search-form">
+        <input id="publication" name="publication" type="search"
+          aria-label="Publication name" placeholder="Polska Press"
+          required minlength="2" maxlength="160" autocomplete="off" list="publications">
+        <button id="submit" type="submit">search</button>
+      </form>
+      <datalist id="publications"></datalist>
+      <p id="funding-note">20 saved maps. New research is disabled in this copy.</p>
+      <details id="saved-maps" hidden>
+        <summary>20 maps</summary>
+        <ul id="publication-list"></ul>
+      </details>
+      <p id="progress" hidden>
+        <span id="progress-message" role="status">searching…</span>
+        <button id="cancel" type="button">cancel</button>
+      </p>
+      <p id="error" role="alert" hidden></p>
+    </header>
+
+    <section id="workspace" aria-label="Ownership map" hidden>
+      <svg id="map" role="group" tabindex="0" aria-label="Ownership map. Select a name or connection for details.">
+        <defs>
+          <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M 0 1 L 9 5 L 0 9" fill="none" stroke="currentColor"/>
+          </marker>
+        </defs>
+        <g id="viewport"></g>
+      </svg>
+      <nav class="map-controls" aria-label="Map controls">
+        <button id="zoom-in" aria-label="Zoom in">+</button>
+        <button id="zoom-out" aria-label="Zoom out">−</button>
+        <button id="fit">fit</button>
+      </nav>
+      <p id="graph-empty" hidden>No ownership sources found.</p>
+    </section>
+  </main>
+
+  <aside id="drawer" aria-label="Details" hidden>
+    <button id="drawer-close" aria-label="Close details">×</button>
+    <div id="drawer-content"></div>
+  </aside>
+</body>
+</html>

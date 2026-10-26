@@ -1,0 +1,356 @@
+{
+  "query": "The Guardian",
+  "kind": "news",
+  "depth": 3,
+  "title": "The Guardian: ownership and control",
+  "rootId": "the-guardian-uk",
+  "summary": "The UK Guardian is published by Guardian News & Media Limited. Guardian Media Group identifies itself as the publication’s owner and is wholly owned by The Scott Trust Limited. Company registers also disclose an intermediate publishing holding company and separate voting and director-appointment rights.",
+  "nodes": [
+    {
+      "id": "the-guardian-uk",
+      "name": "The Guardian",
+      "type": "publication",
+      "description": "United Kingdom newspaper and international English-language news website.",
+      "country": "United Kingdom",
+      "website": "https://www.theguardian.com/",
+      "wikidataId": "Q11148",
+      "endpoint": "continue",
+      "endpointNote": "Publisher and group ownership are traced below.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/The_Guardian_2018.svg/250px-The_Guardian_2018.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:The_Guardian_2018.svg",
+        "artist": "Asvensson",
+        "license": "Public domain"
+      }
+    },
+    {
+      "id": "guardian-news-media",
+      "name": "Guardian News & Media Limited",
+      "type": "publisher",
+      "description": "Publishing company; Companies House number 00908396.",
+      "country": "United Kingdom",
+      "website": "https://www.theguardian.com/",
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Its registered controlling shareholder is Guardian News & Media (Holdings) Limited.",
+      "image": null
+    },
+    {
+      "id": "guardian-news-media-holdings",
+      "name": "Guardian News & Media (Holdings) Limited",
+      "type": "company",
+      "description": "Intermediate holding company; Companies House number 03673142.",
+      "country": "United Kingdom",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "The register identifies Guardian Media Group plc as its controlling shareholder.",
+      "image": null
+    },
+    {
+      "id": "guardian-media-group",
+      "name": "Guardian Media Group plc",
+      "type": "company",
+      "description": "Media parent company; Companies House number 00094531.",
+      "country": "United Kingdom",
+      "website": "https://www.theguardian.com/about/organisation",
+      "wikidataId": "Q139223055",
+      "endpoint": "continue",
+      "endpointNote": "Its sole shareholder is The Scott Trust Limited.",
+      "image": null
+    },
+    {
+      "id": "scott-trust-limited",
+      "name": "The Scott Trust Limited",
+      "type": "company",
+      "description": "Limited company, rather than a legal trust; Companies House number 06706464. Its constitution protects the Guardian’s editorial and financial purposes.",
+      "country": "United Kingdom",
+      "website": "https://www.theguardian.com/the-scott-trust",
+      "wikidataId": null,
+      "endpoint": "unresolved",
+      "endpointNote": "The corporate parent is established, but its current individual shareholders were not verified. The 2023/24 governance report describes five director-shareholders with equal holdings and no personal economic benefit.",
+      "image": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "from": "the-guardian-uk",
+      "to": "guardian-news-media",
+      "relationship": "published_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "Identifies the website’s publishing company.",
+      "evidence": [
+        {
+          "url": "https://www.theguardian.com/about/2017/nov/17/who-owns-the-guardian-our-unique-independent-structure",
+          "title": "Who owns the Guardian? Our unique independent structure",
+          "excerpt": "GNM publishes theguardian.com",
+          "sourceType": "primary",
+          "publishedAt": "2017-11-17",
+          "accessedAt": "2026-09-17T18:58:14.434Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.theguardian.com/about/2017/nov/17/who-owns-the-guardian-our-unique-independent-structure"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-2",
+      "from": "the-guardian-uk",
+      "to": "guardian-media-group",
+      "relationship": "owned_by",
+      "percentage": null,
+      "asOf": "2026-09-10",
+      "description": "Group-level ownership.",
+      "evidence": [
+        {
+          "url": "https://www.theguardian.com/gnm-press-office/2026/sep/10/guardian-media-group-publishes-202526-statutory-accounts",
+          "title": "Guardian Media Group publishes 2025/26 statutory accounts",
+          "excerpt": "The Guardian is owned by Guardian Media Group",
+          "sourceType": "primary",
+          "publishedAt": "2026-09-10",
+          "accessedAt": "2026-09-17T18:58:14.434Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.theguardian.com/gnm-press-office/2026/sep/10/guardian-media-group-publishes-202526-statutory-accounts"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-3",
+      "from": "guardian-news-media",
+      "to": "guardian-news-media-holdings",
+      "relationship": "owned_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "Active register entry records at least 75% of shares; the exact percentage is unspecified.",
+      "evidence": [
+        {
+          "url": "https://find-and-update.company-information.service.gov.uk/company/00908396/persons-with-significant-control",
+          "title": "GUARDIAN NEWS & MEDIA LIMITED persons with significant control",
+          "excerpt": "Ownership of shares – 75% or more",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-17T18:58:14.434Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://find-and-update.company-information.service.gov.uk/company/00908396/persons-with-significant-control"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-4",
+      "from": "guardian-news-media",
+      "to": "guardian-news-media-holdings",
+      "relationship": "controlled_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "Registered voting rights of at least 75%.",
+      "evidence": [
+        {
+          "url": "https://find-and-update.company-information.service.gov.uk/company/00908396/persons-with-significant-control",
+          "title": "GUARDIAN NEWS & MEDIA LIMITED persons with significant control",
+          "excerpt": "Ownership of voting rights - 75% or more",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-17T18:58:14.434Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://find-and-update.company-information.service.gov.uk/company/00908396/persons-with-significant-control"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-5",
+      "from": "guardian-news-media",
+      "to": "guardian-news-media-holdings",
+      "relationship": "appointment_rights",
+      "percentage": null,
+      "asOf": null,
+      "description": "Holding company has director appointment and removal rights.",
+      "evidence": [
+        {
+          "url": "https://find-and-update.company-information.service.gov.uk/company/00908396/persons-with-significant-control",
+          "title": "GUARDIAN NEWS & MEDIA LIMITED persons with significant control",
+          "excerpt": "Right to appoint or remove directors",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-17T18:58:14.434Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://find-and-update.company-information.service.gov.uk/company/00908396/persons-with-significant-control"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-6",
+      "from": "guardian-news-media-holdings",
+      "to": "guardian-media-group",
+      "relationship": "owned_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "Active register entry records at least 75% of shares; the exact percentage is unspecified.",
+      "evidence": [
+        {
+          "url": "https://find-and-update.company-information.service.gov.uk/company/03673142/persons-with-significant-control",
+          "title": "GUARDIAN NEWS & MEDIA (HOLDINGS) LIMITED persons with significant control",
+          "excerpt": "Ownership of shares – 75% or more",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-17T18:58:14.434Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://find-and-update.company-information.service.gov.uk/company/03673142/persons-with-significant-control"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-7",
+      "from": "guardian-news-media-holdings",
+      "to": "guardian-media-group",
+      "relationship": "controlled_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "Registered voting rights of at least 75%.",
+      "evidence": [
+        {
+          "url": "https://find-and-update.company-information.service.gov.uk/company/03673142/persons-with-significant-control",
+          "title": "GUARDIAN NEWS & MEDIA (HOLDINGS) LIMITED persons with significant control",
+          "excerpt": "Ownership of voting rights - 75% or more",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-17T18:58:14.434Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://find-and-update.company-information.service.gov.uk/company/03673142/persons-with-significant-control"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-8",
+      "from": "guardian-news-media-holdings",
+      "to": "guardian-media-group",
+      "relationship": "appointment_rights",
+      "percentage": null,
+      "asOf": null,
+      "description": "GMG has director appointment and removal rights.",
+      "evidence": [
+        {
+          "url": "https://find-and-update.company-information.service.gov.uk/company/03673142/persons-with-significant-control",
+          "title": "GUARDIAN NEWS & MEDIA (HOLDINGS) LIMITED persons with significant control",
+          "excerpt": "Right to appoint or remove directors",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-17T18:58:14.434Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://find-and-update.company-information.service.gov.uk/company/03673142/persons-with-significant-control"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-9",
+      "from": "guardian-media-group",
+      "to": "scott-trust-limited",
+      "relationship": "owned_by",
+      "percentage": 100,
+      "asOf": null,
+      "description": "Sole shareholder.",
+      "evidence": [
+        {
+          "url": "https://www.theguardian.com/about/organisation",
+          "title": "Guardian Media Group",
+          "excerpt": "Guardian Media Group has only one shareholder - The Scott Trust.",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-17T18:58:14.434Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.theguardian.com/about/organisation"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-10",
+      "from": "guardian-media-group",
+      "to": "scott-trust-limited",
+      "relationship": "controlled_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "The register separately records voting rights of at least 75%.",
+      "evidence": [
+        {
+          "url": "https://find-and-update.company-information.service.gov.uk/company/00094531/persons-with-significant-control",
+          "title": "GUARDIAN MEDIA GROUP PLC persons with significant control",
+          "excerpt": "Ownership of voting rights - 75% or more",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-17T18:58:14.434Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://find-and-update.company-information.service.gov.uk/company/00094531/persons-with-significant-control"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-11",
+      "from": "guardian-media-group",
+      "to": "scott-trust-limited",
+      "relationship": "appointment_rights",
+      "percentage": null,
+      "asOf": null,
+      "description": "The Scott Trust Limited has director appointment and removal rights.",
+      "evidence": [
+        {
+          "url": "https://find-and-update.company-information.service.gov.uk/company/00094531/persons-with-significant-control",
+          "title": "GUARDIAN MEDIA GROUP PLC persons with significant control",
+          "excerpt": "Right to appoint or remove directors",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-17T18:58:14.434Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://find-and-update.company-information.service.gov.uk/company/00094531/persons-with-significant-control"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    }
+  ],
+  "gaps": [
+    "The name is shared by publications in other countries. This graph selects the UK publication at theguardian.com; no country or URL was supplied.",
+    "The Guardian-to-GMG ownership edge is an explicit group-level statement, not evidence that intermediate publishing companies can be omitted from the legal corporate chain.",
+    "Current register pages provide control bands rather than exact subsidiary shareholdings. Their 6 April 2016 notification dates are not treated as current ownership observation dates.",
+    "The Scott Trust’s current individual shareholders and ultimate voting arrangements remain unresolved. The older governance report was opened at https://uploads.guim.co.uk/2024/09/17/The_Scott_Trust_corporate_governance_report_23_24.pdf; its shareholder description was not assumed unchanged in 2026.",
+    "Recent-sale searches did not establish a sale of The Guardian. The official ownership statement dated 10 September 2026 supports continued GMG ownership.",
+    "The financial-report index was opened, but the latest full statutory accounts and governance report were not examined. Current editor-appointment provisions were not independently verified.",
+    "No Wikidata identifiers were verified during this run."
+  ],
+  "researchedAt": "2026-09-17T18:58:14.435Z",
+  "coverage": "partial",
+  "engine": "AI web research",
+  "revision": 1,
+  "id": "d60ddc59-6eed-464c-a8a4-63913f2215e0",
+  "publishedSnapshot": true
+}

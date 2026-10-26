@@ -1,0 +1,217 @@
+{
+  "query": "Le Figaro",
+  "kind": "news",
+  "depth": 3,
+  "title": "Le Figaro: ownership and control",
+  "rootId": "le-figaro",
+  "summary": "Le Figaro is a French national general-news daily and digital publication. Its publisher, Société du Figaro, identifies Dassault Médias as its shareholder with more than 95%. Dassault Médias belongs to Groupe Industriel Marcel Dassault. The journalists’ society holds a small shareholding and supervisory-board appointment rights.",
+  "nodes": [
+    {
+      "id": "le-figaro",
+      "name": "Le Figaro",
+      "type": "publication",
+      "description": "French-language national daily newspaper and general-news website based in Paris.",
+      "country": "France",
+      "website": "https://www.lefigaro.fr/",
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Publishing entity identified in the publication’s official legal notice.",
+      "image": null
+    },
+    {
+      "id": "societe-du-figaro",
+      "name": "Société du Figaro",
+      "type": "publisher",
+      "description": "French publishing company, registered in Paris under SIREN 542 077 755.",
+      "country": "France",
+      "website": "https://www.lefigaro.fr/",
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Majority shareholder and journalists’ minority participation are disclosed in official publication documents.",
+      "image": null
+    },
+    {
+      "id": "dassault-medias",
+      "name": "Dassault Médias",
+      "type": "company",
+      "description": "French media holding company, SIREN 662 053 180, identified as Société du Figaro’s shareholder with more than 95%.",
+      "country": "France",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Ownership traced to Groupe Industriel Marcel Dassault through consolidated accounts, corroborated by the 2025 Euromedia Ownership Monitor.",
+      "image": null
+    },
+    {
+      "id": "groupe-industriel-marcel-dassault",
+      "name": "Groupe Industriel Marcel Dassault",
+      "type": "company",
+      "description": "French diversified holding group, commonly called Groupe Dassault.",
+      "country": "France",
+      "website": "https://dassault.fr/",
+      "wikidataId": null,
+      "endpoint": "depth_limit",
+      "endpointNote": "Reached at the third relationship level. Individual beneficial ownership and family holding arrangements were not traced beyond this limit.",
+      "image": null
+    },
+    {
+      "id": "societe-des-journalistes-du-figaro",
+      "name": "Société des Journalistes du Figaro",
+      "type": "company",
+      "description": "Journalists’ representative society holding three shares in Société du Figaro according to its editorial charter.",
+      "country": "France",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "unresolved",
+      "endpointNote": "Its shareholding and supervisory-board designation rights are documented; its own legal structure, membership ownership and internal appointment procedures were not established.",
+      "image": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "from": "le-figaro",
+      "to": "societe-du-figaro",
+      "relationship": "published_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "The official legal notice identifies Société du Figaro as the publisher of lefigaro.fr.",
+      "evidence": [
+        {
+          "url": "https://mentions-legales.lefigaro.fr/le-figaro/mentions-legales-figaro",
+          "title": "Mentions légales figaro",
+          "excerpt": "est édité par Société du Figaro",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:35:55.360Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://mentions-legales.lefigaro.fr/le-figaro/mentions-legales-figaro"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-2",
+      "from": "societe-du-figaro",
+      "to": "dassault-medias",
+      "relationship": "owned_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "The legal notice reports a holding greater than 95%. No exact percentage is supplied, so the numeric percentage is left null.",
+      "evidence": [
+        {
+          "url": "https://mentions-legales.lefigaro.fr/le-figaro/mentions-legales-figaro",
+          "title": "Mentions légales figaro",
+          "excerpt": "Actionnaire à plus de 95% : Dassault Médias",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:35:55.360Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://mentions-legales.lefigaro.fr/le-figaro/mentions-legales-figaro"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-3",
+      "from": "dassault-medias",
+      "to": "groupe-industriel-marcel-dassault",
+      "relationship": "owned_by",
+      "percentage": 100,
+      "asOf": "2023-12-31",
+      "description": "GIMD’s consolidated accounts report a 100% interest in the Dassault Médias subgroup. The 2025 Euromedia report corroborates continuing GIMD control; the precise percentage is dated to the accounts.",
+      "evidence": [
+        {
+          "url": "https://uploads1.craft.co/uploads/unified_record/source/document/2112079/1fcc5334eb1663d8.pdf",
+          "title": "Groupe Industriel Marcel Dassault — Comptes consolidés au 31 décembre 2023",
+          "excerpt": "Sous-groupe Dassault Médias IG 100% 100% Presse",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:35:55.360Z",
+          "validation": "document_available",
+          "httpStatus": 200,
+          "resolvedUrl": "https://uploads1.craft.co/uploads/unified_record/source/document/2112079/1fcc5334eb1663d8.pdf"
+        },
+        {
+          "url": "https://media-ownership.eu/2025-edition/country-reports/france/",
+          "title": "France — Euromedia Ownership Monitor, 2025 edition",
+          "excerpt": "Dassault Médias, which is controlled by the Marcel Dassault industrial group",
+          "sourceType": "secondary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:35:55.360Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://media-ownership.eu/2025-edition/country-reports/france/"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-4",
+      "from": "societe-du-figaro",
+      "to": "societe-des-journalistes-du-figaro",
+      "relationship": "owned_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "Annex 2 of the official editorial charter states that the journalists’ society holds three shares. The corresponding percentage is not disclosed.",
+      "evidence": [
+        {
+          "url": "https://mentions-legales.lefigaro.fr/le-figaro/charte-editoriale",
+          "title": "Charte éditoriale",
+          "excerpt": "détient 3 actions du capital social",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:35:55.360Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://mentions-legales.lefigaro.fr/le-figaro/charte-editoriale"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-5",
+      "from": "societe-du-figaro",
+      "to": "societe-des-journalistes-du-figaro",
+      "relationship": "appointment_rights",
+      "percentage": null,
+      "asOf": null,
+      "description": "The charter grants the journalists’ society rights to designate members of Société du Figaro’s supervisory board. This establishes representation, not majority control.",
+      "evidence": [
+        {
+          "url": "https://mentions-legales.lefigaro.fr/le-figaro/charte-editoriale",
+          "title": "Charte éditoriale",
+          "excerpt": "désigne des membres du conseil de Surveillance",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:35:55.360Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://mentions-legales.lefigaro.fr/le-figaro/charte-editoriale"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    }
+  ],
+  "gaps": [
+    "Searches for recent sales found no verified completed transfer away from Dassault. This does not establish that every transaction or filing has been captured.",
+    "The official legal notice and editorial charter are undated. Their ownership-observation dates remain null.",
+    "The latest opened primary evidence quantifying GIMD’s interest in Dassault Médias is dated 31 December 2023; continuing control is corroborated by the 2025 Euromedia report.",
+    "The exact Société du Figaro capitalization, other minority holdings and voting-right percentages were not established. Consolidated accounts showing 100% at group level do not override the charter’s explicit three-share journalists’ holding.",
+    "Groupe Figaro SAS, SIREN 401 328 919, and Dassault Médias, SIREN 662 053 180, are distinct legal entities despite overlapping group terminology. No unsupported intermediate ownership link has been inserted.",
+    "Tracing stops at GIMD under the three-level limit; ultimate family beneficial ownership is not resolved in this graph."
+  ],
+  "researchedAt": "2026-09-18T10:35:55.360Z",
+  "coverage": "partial",
+  "engine": "AI web research",
+  "revision": 1,
+  "id": "47a454ce-cae3-49bf-8c32-0d44c6c62252",
+  "publishedSnapshot": true
+}

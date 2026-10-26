@@ -1,0 +1,144 @@
+{
+  "query": "Science",
+  "kind": "academic",
+  "depth": 3,
+  "title": "Science (academic journal): ownership and control",
+  "rootId": "science-journal",
+  "summary": "Science is a United States multidisciplinary academic journal published by the American Association for the Advancement of Science (AAAS), a nonprofit scientific association. Accessible secondary evidence identifies AAAS as its owner and describes board governance. Current primary-source verification was limited by inaccessible official pages.",
+  "nodes": [
+    {
+      "id": "science-journal",
+      "name": "Science",
+      "type": "publication",
+      "description": "United States English-language, peer-reviewed weekly journal covering multidisciplinary research, scientific news and policy. Print ISSN 0036-8075; online ISSN 1095-9203.",
+      "country": "United States",
+      "website": "https://www.science.org/journal/science",
+      "wikidataId": "Q192864",
+      "endpoint": "continue",
+      "endpointNote": "Publishing and ownership relationships lead to AAAS.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Science_AAAS_logo.svg/250px-Science_AAAS_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:Science_AAAS_logo.svg",
+        "artist": "Jarould",
+        "license": "Public domain"
+      }
+    },
+    {
+      "id": "aaas",
+      "name": "American Association for the Advancement of Science",
+      "type": "publisher",
+      "description": "United States nonprofit scientific membership association and publisher of Science.",
+      "country": "United States",
+      "website": "https://www.aaas.org/",
+      "wikidataId": "Q40358",
+      "endpoint": "continue",
+      "endpointNote": "Governance is traced to its board; no equity owners are asserted.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/American_Assoc._for_the_Advancement_of_Science_by_Matthew_Bisanz.JPG/250px-American_Assoc._for_the_Advancement_of_Science_by_Matthew_Bisanz.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:American_Assoc._for_the_Advancement_of_Science_by_Matthew_Bisanz.JPG",
+        "artist": "MBisanz talk",
+        "license": "CC BY-SA 3.0"
+      }
+    },
+    {
+      "id": "aaas-board",
+      "name": "AAAS Board of Directors",
+      "type": "aggregate",
+      "description": "Internal governing body with responsibilities for association funds, budgets and appointment of administrators. This is a governance body, not an equity owner.",
+      "country": "United States",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "unresolved",
+      "endpointNote": "The precise current allocation of election and appointment rights could not be verified from accessible primary governance documents.",
+      "image": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "from": "science-journal",
+      "to": "aaas",
+      "relationship": "published_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "The publication's reference entry identifies AAAS as publisher.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Science_(journal)",
+          "title": "Science (journal) - Wikipedia",
+          "excerpt": "Publisher American Association for the Advancement of Science",
+          "sourceType": "secondary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:40:17.229Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://en.wikipedia.org/wiki/Science_(journal)"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-2",
+      "from": "science-journal",
+      "to": "aaas",
+      "relationship": "owned_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "The reference entry explicitly records the journal's ownership transfer to AAAS after Cattell's death in 1944 and continues to identify it as AAAS's journal. Searches found no subsequent sale announcement. Current ownership was not independently confirmed through an accessible primary legal document.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Science_(journal)",
+          "title": "Science (journal) - Wikipedia",
+          "excerpt": "the ownership of the journal was transferred to the AAAS",
+          "sourceType": "secondary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:40:17.229Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://en.wikipedia.org/wiki/Science_(journal)"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-3",
+      "from": "aaas",
+      "to": "aaas-board",
+      "relationship": "controlled_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "The board exercises institutional governance, including financial oversight and administrative appointments. The source also describes a Council and other officers, so this edge does not imply exclusive board authority.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/American_Association_for_the_Advancement_of_Science",
+          "title": "American Association for the Advancement of Science - Wikipedia",
+          "excerpt": "administration of all association funds, publication of a budget, appointment of administrators",
+          "sourceType": "secondary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:40:17.229Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://en.wikipedia.org/wiki/American_Association_for_the_Advancement_of_Science"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    }
+  ],
+  "gaps": [
+    "Official Science About pages, AAAS governance pages, the 2017–2018 governance manual and the 2024 annual report returned access errors. Their search snippets were not used as edge evidence.",
+    "No recent sale was found in the searches performed, but current ownership rests on secondary evidence combining an explicit historical transfer with the continuing AAAS affiliation.",
+    "An accessible AAAS Member Community notice dated 2026-02-02 confirms an annual election, but does not establish which positions members elect or their exact appointment rights: https://members.aaas.org/discussion/final-day-to-vote-aaas-annual-election-1",
+    "The secondary governance page contains outdated officeholder information. No named individual or exact current board composition is asserted.",
+    "The subject is the academic journal Science, not the former Science 80–86 popular magazine, Science Advances, or publications of the American Astronomical Society.",
+    "No current company-register or nonprofit filing was successfully opened. Ownership percentages, observation dates and Wikidata identifiers remain unverified."
+  ],
+  "researchedAt": "2026-09-18T10:40:17.229Z",
+  "coverage": "partial",
+  "engine": "AI web research",
+  "revision": 1,
+  "id": "39b166e8-02a8-47b4-973a-99407f7b58f3",
+  "publishedSnapshot": true
+}

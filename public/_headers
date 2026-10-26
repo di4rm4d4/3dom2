@@ -1,0 +1,16 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https://upload.wikimedia.org https://thumb.wikimedia.org https://commons.wikimedia.org data:; connect-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'
+
+/app.js
+  Cache-Control: no-cache
+
+/api-response.js
+  Cache-Control: no-cache
+
+/catalog.js
+  Cache-Control: no-cache
+
+/data/*
+  Cache-Control: no-cache

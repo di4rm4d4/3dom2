@@ -1,0 +1,156 @@
+{
+  "query": "CNN",
+  "kind": "news",
+  "depth": 3,
+  "title": "CNN ownership and control",
+  "rootId": "cnn",
+  "summary": "CNN is a United States-based international television and digital news organization within Warner Bros. Discovery. As of the latest opened transaction update, dated September 8, 2026, Paramount’s proposed acquisition remained paused by litigation and had not transferred ownership.",
+  "nodes": [
+    {
+      "id": "cnn",
+      "name": "CNN",
+      "type": "publication",
+      "description": "Cable News Network: the United States-based television and digital news organization, including CNN.com and its international news services.",
+      "country": "United States",
+      "website": "https://www.cnn.com/",
+      "wikidataId": "Q48340",
+      "endpoint": "continue",
+      "endpointNote": "CNN’s official fact sheet identifies it as a division of Warner Bros. Discovery.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/CNN.svg/250px-CNN.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:CNN.svg",
+        "artist": "Warner Bros. Discovery.\n\nSreejithk2000 at en.wikipedia",
+        "license": "Public domain"
+      }
+    },
+    {
+      "id": "warner-bros-discovery",
+      "name": "Warner Bros. Discovery, Inc.",
+      "type": "company",
+      "description": "Publicly traded media company and CNN’s corporate parent. Its proposed acquisition by Paramount Skydance remained uncompleted in the September 8, 2026 transaction update.",
+      "country": "United States",
+      "website": "https://www.wbd.com/",
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Ownership continues to public shareholders; the proposed acquirer is excluded from the current ownership graph.",
+      "image": null
+    },
+    {
+      "id": "wbd-public-shareholders",
+      "name": "Warner Bros. Discovery public shareholders",
+      "type": "aggregate",
+      "description": "Aggregate of institutional funds, other investors and individual shareholders. WBD’s April 10, 2026 disclosure attributed beneficial ownership of 6.2% to BlackRock and 5.2% to State Street through their subsidiaries. These regulatory attributions do not establish that the managers economically own their clients’ assets.",
+      "country": null,
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "dispersed_shareholders",
+      "endpointNote": "Public shareholder endpoint. Underlying fund beneficiaries and individual investors were not comprehensively identified; no single ultimate controller is established by this research.",
+      "image": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "from": "cnn",
+      "to": "warner-bros-discovery",
+      "relationship": "parent_company",
+      "percentage": null,
+      "asOf": "2026-07-24",
+      "description": "CNN identifies WBD as its parent. The official fact sheet independently describes CNN as a WBD division. This records the corporate parent relationship without asserting an unverified intermediate legal-entity chain.",
+      "evidence": [
+        {
+          "url": "https://cnnpressroom.blogs.cnn.com/cnn-fact-sheet/",
+          "title": "CNN Worldwide Fact Sheet",
+          "excerpt": "CNN is a division of Warner Bros. Discovery.",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:34:16.133Z",
+          "validation": "unavailable"
+        },
+        {
+          "url": "https://transcripts.cnn.com/show/cg/date/2026-07-24/segment/02",
+          "title": "CNN transcript: The Lead, July 24, 2026",
+          "excerpt": "Warner Bros. Discovery is the parent company of CNN.",
+          "sourceType": "primary",
+          "publishedAt": "2026-07-24",
+          "accessedAt": "2026-09-18T10:34:16.133Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://transcripts.cnn.com/show/cg/date/2026-07-24/segment/02"
+        },
+        {
+          "url": "https://ir.paramount.com/news-releases/news-release-details/paramount-skydance-moves-protect-against-costs-delay-wbd-merger",
+          "title": "Paramount Skydance Moves to Protect Against Costs of Delay as WBD Merger Is Ready to Close",
+          "excerpt": "These two lawsuits are the only remaining barrier to closing this transaction.",
+          "sourceType": "primary",
+          "publishedAt": "2026-09-08",
+          "accessedAt": "2026-09-18T10:34:16.133Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://ir.paramount.com/news-releases/news-release-details/paramount-skydance-moves-protect-against-costs-delay-wbd-merger"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-2",
+      "from": "warner-bros-discovery",
+      "to": "wbd-public-shareholders",
+      "relationship": "owned_by",
+      "percentage": null,
+      "asOf": "2026-04-10",
+      "description": "WBD reported 2,506,679,418 outstanding common shares. Shareholders are grouped because the opened disclosures do not establish a complete, current allocation among ultimate economic owners.",
+      "evidence": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1437107/000143710726000046/wbd-20260429.htm",
+          "title": "Warner Bros. Discovery 2026 Proxy Statement",
+          "excerpt": "2,506,679,418 shares of our common stock outstanding",
+          "sourceType": "primary",
+          "publishedAt": "2026-04-30",
+          "accessedAt": "2026-09-18T10:34:16.133Z",
+          "validation": "unavailable"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-3",
+      "from": "warner-bros-discovery",
+      "to": "wbd-public-shareholders",
+      "relationship": "appointment_rights",
+      "percentage": null,
+      "asOf": "2026-04-10",
+      "description": "Common shareholders possess director-election voting rights. The 2026 proxy solicited their votes to elect thirteen directors for one-year terms; this is collective governance authority.",
+      "evidence": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1437107/000143710726000046/wbd-20260429.htm",
+          "title": "Warner Bros. Discovery 2026 Proxy Statement",
+          "excerpt": "To elect each of the thirteen director nominees",
+          "sourceType": "primary",
+          "publishedAt": "2026-04-30",
+          "accessedAt": "2026-09-18T10:34:16.133Z",
+          "validation": "unavailable"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    }
+  ],
+  "gaps": [
+    "The requested name is interpreted as the United States-based CNN organization and CNN.com. Separately operated local CNN-branded licensees are outside this graph.",
+    "The precise chain of intermediate legal subsidiaries between CNN’s operating entities and WBD was not established by the opened sources.",
+    "The latest opened merger-status evidence is September 8, 2026. No completed acquisition was established through the September 18 research cutoff; Paramount and the Ellison family are therefore not shown as current owners.",
+    "The shareholder observation is dated April 10, 2026, not September 18. Subsequent holdings and the ultimate economic ownership of institutional positions remain unresolved.",
+    "WBD’s proxy says Vanguard’s January 2026 internal realignment ended its former consolidated beneficial-ownership reporting. The older 11.2% Vanguard figure is therefore not represented as a current ownership stake.",
+    "Investment-manager beneficial-ownership disclosures were not converted into equity ownership or control of CNN. Separate current voting mandates for those managers were not established.",
+    "Wikidata identifiers were not verified in opened sources."
+  ],
+  "researchedAt": "2026-09-18T10:34:16.133Z",
+  "coverage": "partial",
+  "engine": "AI web research",
+  "revision": 1,
+  "id": "4b61eca7-5a4e-4ae2-a156-4ee316c9de96",
+  "publishedSnapshot": true
+}

@@ -1,0 +1,192 @@
+{
+  "query": "The Wall Street Journal",
+  "kind": "auto",
+  "depth": 3,
+  "title": "The Wall Street Journal: ownership and voting control",
+  "rootId": "wall-street-journal",
+  "summary": "The Wall Street Journal is a US newspaper published by Dow Jones, part of News Corp. At June 30, 2026, LGC Holdco held approximately 34.52% of News Corp’s voting Class B shares. Lachlan Murdoch controls voting of that block through an appointed managing director. No subsequent sale of the publication was identified.",
+  "nodes": [
+    {
+      "id": "wall-street-journal",
+      "name": "The Wall Street Journal",
+      "type": "publication",
+      "description": "US newspaper and digital news publication based in New York, covering business, finance, economics and general news.",
+      "country": "United States",
+      "website": "https://www.wsj.com/",
+      "wikidataId": "Q164746",
+      "endpoint": "continue",
+      "endpointNote": "Publishing relationship traced to Dow Jones.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/The_Wall_Street_Journal_Logo.svg/250px-The_Wall_Street_Journal_Logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:The_Wall_Street_Journal_Logo.svg",
+        "artist": "The Wall Street Journal",
+        "license": "Public domain"
+      }
+    },
+    {
+      "id": "dow-jones-company",
+      "name": "Dow Jones & Company, Inc.",
+      "type": "publisher",
+      "description": "Publisher of The Wall Street Journal and a business within News Corp.",
+      "country": "United States",
+      "website": "https://www.dowjones.com/",
+      "wikidataId": "Q1126244",
+      "endpoint": "continue",
+      "endpointNote": "Corporate parent identified as News Corp; intermediate legal holding entities were not established.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Dow_Jones_Logo.svg/250px-Dow_Jones_Logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:Dow_Jones_Logo.svg",
+        "artist": "Dow Jones &amp; Company",
+        "license": "Public domain"
+      }
+    },
+    {
+      "id": "news-corporation",
+      "name": "News Corporation",
+      "type": "company",
+      "description": "Publicly traded US media and information services group, operating as News Corp. Its dual-class structure separates ordinary voting rights from much of its equity.",
+      "country": "United States",
+      "website": "https://newscorp.com/",
+      "wikidataId": "Q185278",
+      "endpoint": "continue",
+      "endpointNote": "Significant shareholding and associated voting control traced separately; other shareholders are not comprehensively mapped.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/News_Corp._logo.svg/250px-News_Corp._logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:News_Corp._logo.svg",
+        "artist": "News Corporation",
+        "license": "Public domain"
+      }
+    },
+    {
+      "id": "lgc-holdco",
+      "name": "LGC Holdco, LLC",
+      "type": "company",
+      "description": "Delaware company holding News Corp shares formerly held by the Murdoch Family Trust. Owned by the LGC Family Trusts.",
+      "country": "United States",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "depth_limit",
+      "endpointNote": "Third relationship level reached. Underlying family trusts and the manager structure are not expanded.",
+      "image": null
+    },
+    {
+      "id": "lachlan-murdoch",
+      "name": "Lachlan K. Murdoch",
+      "type": "person",
+      "description": "Controls voting and disposition of LGC Holdco’s News Corp shares through appointment and replacement of its manager’s managing director, subject to limited exceptions.",
+      "country": null,
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "individual",
+      "endpointNote": "Individual stopping point. Voting authority does not establish personal economic ownership of the entire family shareholding.",
+      "image": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "from": "wall-street-journal",
+      "to": "dow-jones-company",
+      "relationship": "published_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "The publication’s official About page identifies Dow Jones as its publisher.",
+      "evidence": [
+        {
+          "url": "https://www.wsj.com/about-us",
+          "title": "About Us - The Wall Street Journal",
+          "excerpt": "Dow Jones & Co., a unit of News Corp, publishes The Wall Street Journal",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-17T19:27:03.969Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.wsj.com/about-us"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-2",
+      "from": "dow-jones-company",
+      "to": "news-corporation",
+      "relationship": "parent_company",
+      "percentage": null,
+      "asOf": null,
+      "description": "News Corp is identified as Dow Jones’s corporate parent. This edge represents the group relationship without asserting a verified direct equity percentage.",
+      "evidence": [
+        {
+          "url": "https://www.wsj.com/about-us",
+          "title": "About Us - The Wall Street Journal",
+          "excerpt": "a unit of News Corp",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-17T19:27:03.969Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.wsj.com/about-us"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-3",
+      "from": "news-corporation",
+      "to": "lgc-holdco",
+      "relationship": "owned_by",
+      "percentage": 34.52,
+      "asOf": "2026-06-30",
+      "description": "Percentage refers exclusively to outstanding Class B common stock, the ordinary voting class, not total equity. LGC also held less than 1% of Class A stock. The annual report confirms the transfer from the former Murdoch Family Trust.",
+      "evidence": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1564708/000156470826000175/nws-20260630.htm",
+          "title": "News Corporation — Form 10-K for the year ended June 30, 2026",
+          "excerpt": "approximately 34.52% of the Company’s Class B Common Stock",
+          "sourceType": "primary",
+          "publishedAt": "2026-08-07",
+          "accessedAt": "2026-09-17T19:27:03.970Z",
+          "validation": "unavailable"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-4",
+      "from": "news-corporation",
+      "to": "lachlan-murdoch",
+      "relationship": "controlled_by",
+      "percentage": null,
+      "asOf": "2026-06-30",
+      "description": "Indirect control of the LGC voting block, rather than a majority of all votes: Lachlan appoints and can replace the managing director who decides voting and disposition of LGC’s shares, subject to limited exceptions. He disclaims beneficial ownership. The family’s contractual 44% voting ceiling is a limit, not its actual holding.",
+      "evidence": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1564708/000156470826000175/nws-20260630.htm",
+          "title": "News Corporation — Form 10-K for the year ended June 30, 2026",
+          "excerpt": "appointed, and may be replaced, by Lachlan K. Murdoch",
+          "sourceType": "primary",
+          "publishedAt": "2026-08-07",
+          "accessedAt": "2026-09-17T19:27:03.970Z",
+          "validation": "unavailable"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    }
+  ],
+  "gaps": [
+    "Research reflects public sources available through September 17, 2026; the latest verified shareholding observation is June 30, 2026.",
+    "News Corp’s remaining institutional and individual shareholders are not comprehensively mapped. Class B percentages must not be interpreted as percentages of total economic ownership.",
+    "The three-level limit stops the ownership branch at LGC Holdco. Its underlying trusts and manager are not separately graphed.",
+    "Intermediate legal holding companies between Dow Jones and News Corp, and current special editorial appointment arrangements, were not established.",
+    "The official About page is undated, so its relationship observation dates are null. Wikidata identifiers were not verified."
+  ],
+  "researchedAt": "2026-09-17T19:27:03.971Z",
+  "coverage": "partial",
+  "engine": "AI web research",
+  "revision": 1,
+  "id": "3866f490-cbfd-4e27-98c7-cdb596503863",
+  "publishedSnapshot": true
+}

@@ -1,0 +1,139 @@
+{
+  "query": "Associated Press",
+  "kind": "news",
+  "depth": 3,
+  "title": "Associated Press: cooperative governance and control",
+  "rootId": "associated-press",
+  "summary": "The Associated Press is a United States-based global news agency organized as a not-for-profit cooperative. AP states that it has no owner or shareholders. Its U.S. newspaper members elect directors, and directors also have board appointment rights. No sale or acquisition of AP was identified in the searches performed.",
+  "nodes": [
+    {
+      "id": "associated-press",
+      "name": "The Associated Press",
+      "type": "publication",
+      "description": "Global news agency headquartered in New York, United States, founded in 1846. The root represents the news organization and cooperative itself.",
+      "country": "United States",
+      "website": "https://www.ap.org/",
+      "wikidataId": "Q40469",
+      "endpoint": "continue",
+      "endpointNote": "Governance is traced to its board and newspaper-member electorate. No separate equity-owning parent was established.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Associated_Press_logo_2012.svg/250px-Associated_Press_logo_2012.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:Associated_Press_logo_2012.svg",
+        "artist": "Associated Press",
+        "license": "Public domain"
+      }
+    },
+    {
+      "id": "ap-board",
+      "name": "Associated Press Board of Directors",
+      "type": "aggregate",
+      "description": "AP's corporate governing board. Its April 2026 announcement reported 10 directors, with directors elected by members or appointed by directors.",
+      "country": "United States",
+      "website": "https://www.ap.org/about/our-people/",
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Board election rights are traced to U.S. newspaper members. Board appointment powers are separately recorded; directorship does not establish ownership.",
+      "image": null
+    },
+    {
+      "id": "ap-newspaper-members",
+      "name": "AP U.S. newspaper members",
+      "type": "aggregate",
+      "description": "The collective U.S. newspaper membership identified by AP as its board electorate. This represents membership governance, not shareholders.",
+      "country": "United States",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "unresolved",
+      "endpointNote": "A current complete voting-member roster and allocation of voting rights were not established. Individual members and their ultimate owners therefore remain unresolved.",
+      "image": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "from": "associated-press",
+      "to": "ap-board",
+      "relationship": "controlled_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "AP identifies its board as part of its corporate governance. This edge describes institutional governance, not equity ownership or control of particular editorial decisions.",
+      "evidence": [
+        {
+          "url": "https://www.ap.org/about/",
+          "title": "About Us | The Associated Press",
+          "excerpt": "The AP is governed by its executive leadership team and board of directors.",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:27:02.353Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.ap.org/about/"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-2",
+      "from": "ap-board",
+      "to": "ap-newspaper-members",
+      "relationship": "appointment_rights",
+      "percentage": null,
+      "asOf": null,
+      "description": "U.S. newspaper members elect directors under AP's bylaws. The opened sources do not quantify their voting weights or the proportion of seats subject to member election.",
+      "evidence": [
+        {
+          "url": "https://www.ap.org/about/our-people/",
+          "title": "Our people | The Associated Press",
+          "excerpt": "our U.S. newspaper members elect a board of directors to provide corporate direction according to AP bylaws.",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:27:02.353Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.ap.org/about/our-people/"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-3",
+      "from": "associated-press",
+      "to": "ap-board",
+      "relationship": "appointment_rights",
+      "percentage": null,
+      "asOf": "2026-04-23",
+      "description": "Existing directors can appoint directors to AP's board. The April 2026 announcement distinguishes two appointments from one incumbent's reelection.",
+      "evidence": [
+        {
+          "url": "https://www.ap.org/media-center/press-releases/2026/ap-announces-2-new-directors-1-incumbent-at-annual-meeting/",
+          "title": "AP announces 2 new directors, 1 incumbent at annual meeting",
+          "excerpt": "Directors are elected by members or appointed to the AP board by directors.",
+          "sourceType": "primary",
+          "publishedAt": "2026-04-23",
+          "accessedAt": "2026-09-18T10:27:02.353Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.ap.org/media-center/press-releases/2026/ap-announces-2-new-directors-1-incumbent-at-annual-meeting/"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    }
+  ],
+  "gaps": [
+    "AP explicitly describes itself as having no owner or shareholders in https://apnews.com/article/associated-press-free-speech-white-house-a1d29b0efc3dc2c0176c7be2471f2a3b. Consequently, cooperative membership is not represented as percentage equity ownership.",
+    "Current bylaws, a complete voting-member register, voting weights, and reserved appointment powers were not established from the opened sources. The graph does not identify individual member organizations as owners.",
+    "AP's About page includes newspapers and broadcasters in its cooperative membership, while its governance page specifically assigns board elections to U.S. newspaper members. Broadcaster voting rights were not established.",
+    "Undated official governance pages support current observations but do not supply effective dates; their asOf values are null.",
+    "The name was resolved to the United States-based Associated Press, not Australian Associated Press or Associated Press of Pakistan.",
+    "Recent-sale searches did not identify a transfer of AP ownership; this does not establish exhaustive coverage of all governance changes."
+  ],
+  "researchedAt": "2026-09-18T10:27:02.353Z",
+  "coverage": "partial",
+  "engine": "AI web research",
+  "revision": 1,
+  "id": "1c902e51-cea2-4125-83a5-68c918a2b384",
+  "publishedSnapshot": true
+}

@@ -1,0 +1,253 @@
+{
+  "query": "Nature",
+  "kind": "academic",
+  "depth": 3,
+  "title": "Nature: publishing group, ownership and control",
+  "rootId": "nature-journal",
+  "summary": "Nature is a British scientific journal published through Nature Portfolio, part of Springer Nature. The latest financial disclosure reviewed reports Holtzbrinck interests of 50.6% and a BC-backed shareholder interest of 32.1% at 30 June 2026. A July 2026 clearance for Holtzbrinck to acquire sole control creates uncertainty about subsequent governance changes.",
+  "nodes": [
+    {
+      "id": "nature-journal",
+      "name": "Nature",
+      "type": "publication",
+      "description": "British weekly multidisciplinary scientific journal established in 1869; print ISSN 0028-0836 and online ISSN 1476-4687.",
+      "country": "United Kingdom",
+      "website": "https://www.nature.com/nature/",
+      "wikidataId": "Q180445",
+      "endpoint": "continue",
+      "endpointNote": "Publishing relationship traced through Nature Portfolio.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Nature_journal_logo.svg/250px-Nature_journal_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:Nature_journal_logo.svg",
+        "artist": "Nature",
+        "license": "Public domain"
+      }
+    },
+    {
+      "id": "nature-portfolio",
+      "name": "Nature Portfolio",
+      "type": "publisher",
+      "description": "Publishing portfolio that includes Nature; represented here as a publishing operation, without asserting separate legal incorporation.",
+      "country": "United Kingdom",
+      "website": "https://www.nature.com/",
+      "wikidataId": "Q180419",
+      "endpoint": "continue",
+      "endpointNote": "Part of the Springer Nature group.",
+      "image": null
+    },
+    {
+      "id": "springer-nature-kgaa",
+      "name": "Springer Nature AG & Co. KGaA",
+      "type": "company",
+      "description": "German listed academic publishing group, registered in Berlin, organised as a partnership limited by shares.",
+      "country": "Germany",
+      "website": "https://group.springernature.com/",
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Significant shareholding interests and the general partner are identified at the third relationship level.",
+      "image": null
+    },
+    {
+      "id": "holtzbrinck-kg",
+      "name": "Georg von Holtzbrinck GmbH & Co. KG",
+      "type": "company",
+      "description": "German publishing group identified in the half-year report as holding an indirect 50.6% interest in Springer Nature.",
+      "country": "Germany",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "depth_limit",
+      "endpointNote": "Third relationship level. Intermediate holding companies and ultimate private owners are not expanded. Completion of the cleared sole-control transaction was not verified.",
+      "image": null
+    },
+    {
+      "id": "galileo-participation",
+      "name": "Springer Science+Business Media Galileo Participation S.à r.l.",
+      "type": "company",
+      "description": "Luxembourg direct shareholder associated with funds advised by BC Partners and other co-investors.",
+      "country": "Luxembourg",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "depth_limit",
+      "endpointNote": "Third relationship level. The fund ownership chain is not expanded; BC Partners is not treated as personally owning fund assets.",
+      "image": null
+    },
+    {
+      "id": "springer-nature-management",
+      "name": "Springer Nature Management Aktiengesellschaft",
+      "type": "company",
+      "description": "Berlin-based general partner responsible for managing Springer Nature AG & Co. KGaA.",
+      "country": "Germany",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "depth_limit",
+      "endpointNote": "Third relationship level. Its ownership and appointment arrangements require confirmation following the July 2026 sole-control clearance.",
+      "image": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "from": "nature-journal",
+      "to": "nature-portfolio",
+      "relationship": "published_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "The journal's publisher is identified as Nature Portfolio.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Nature_(journal)",
+          "title": "Nature (journal) - Wikipedia",
+          "excerpt": "Publisher Nature Portfolio",
+          "sourceType": "secondary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-17T18:54:33.997Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://en.wikipedia.org/wiki/Nature_(journal)"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-2",
+      "from": "nature-portfolio",
+      "to": "springer-nature-kgaa",
+      "relationship": "parent_company",
+      "percentage": null,
+      "asOf": null,
+      "description": "Nature Portfolio belongs to Springer Nature. This describes the portfolio's group affiliation rather than a quantified equity interest in a separately verified company.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Nature_(journal)",
+          "title": "Nature (journal) - Wikipedia",
+          "excerpt": "subsidiary of Springer Nature",
+          "sourceType": "secondary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-17T18:54:33.997Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://en.wikipedia.org/wiki/Nature_(journal)"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-3",
+      "from": "springer-nature-kgaa",
+      "to": "holtzbrinck-kg",
+      "relationship": "owned_by",
+      "percentage": 50.6,
+      "asOf": "2026-06-30",
+      "description": "The half-year report attributes 50.6% to Holtzbrinck. This is an indirect group interest: the annual report identifies GvH Vermögensverwaltungsgesellschaft XXXIII mbH as the direct shareholder.",
+      "evidence": [
+        {
+          "url": "https://financialfilings.com/filings/springer-nature-ag-co-kgaa/interim-quarterly-report/2026/49953661/",
+          "title": "Springer Nature AG & Co. KGaA — Interim / Quarterly Report 2026",
+          "excerpt": "Georg von Holtzbrinck GmbH",
+          "sourceType": "primary",
+          "publishedAt": "2026-08-05",
+          "accessedAt": "2026-09-17T18:54:33.997Z",
+          "validation": "unavailable",
+          "httpStatus": 403
+        },
+        {
+          "url": "https://annualreport.springernature.com/2025/files/sn-annual-report-2025-en.pdf",
+          "title": "Springer Nature Annual Report 2025",
+          "excerpt": "Direct shareholders",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-17T18:54:33.997Z",
+          "validation": "document_available",
+          "httpStatus": 200,
+          "resolvedUrl": "https://annualreport.springernature.com/2025/files/sn-annual-report-2025-en.pdf"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-4",
+      "from": "springer-nature-kgaa",
+      "to": "galileo-participation",
+      "relationship": "owned_by",
+      "percentage": 32.1,
+      "asOf": "2026-06-30",
+      "description": "The half-year report gives the BC-backed company's interest as 32.1%. The annual report identifies the direct shareholder as Galileo Participation. The half-year report is reproduced by FinancialFilings.",
+      "evidence": [
+        {
+          "url": "https://financialfilings.com/filings/springer-nature-ag-co-kgaa/interim-quarterly-report/2026/49953661/",
+          "title": "Springer Nature AG & Co. KGaA — Interim / Quarterly Report 2026",
+          "excerpt": "funds advised by BC Partners LLP and other co-investors",
+          "sourceType": "primary",
+          "publishedAt": "2026-08-05",
+          "accessedAt": "2026-09-17T18:54:33.997Z",
+          "validation": "unavailable",
+          "httpStatus": 403
+        },
+        {
+          "url": "https://annualreport.springernature.com/2025/files/sn-annual-report-2025-en.pdf",
+          "title": "Springer Nature Annual Report 2025",
+          "excerpt": "Direct shareholders",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-17T18:54:33.997Z",
+          "validation": "document_available",
+          "httpStatus": 200,
+          "resolvedUrl": "https://annualreport.springernature.com/2025/files/sn-annual-report-2025-en.pdf"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-5",
+      "from": "springer-nature-kgaa",
+      "to": "springer-nature-management",
+      "relationship": "managed_by",
+      "percentage": null,
+      "asOf": "2026-06-30",
+      "description": "Management is exercised by the corporate general partner. This governance role is separate from equity ownership.",
+      "evidence": [
+        {
+          "url": "https://group.springernature.com/gp/group/about-us/corporate-governance",
+          "title": "Corporate Governance | Springer Nature",
+          "excerpt": "The management of the KGaA is undertaken by a “general partner”",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-17T18:54:33.997Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://group.springernature.com/gp/group/about-us/corporate-governance"
+        },
+        {
+          "url": "https://financialfilings.com/filings/springer-nature-ag-co-kgaa/interim-quarterly-report/2026/49953661/",
+          "title": "Springer Nature AG & Co. KGaA — Interim / Quarterly Report 2026",
+          "excerpt": "Springer Nature Management Aktiengesellschaft",
+          "sourceType": "primary",
+          "publishedAt": "2026-08-05",
+          "accessedAt": "2026-09-17T18:54:33.997Z",
+          "validation": "unavailable",
+          "httpStatus": 403
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    }
+  ],
+  "gaps": [
+    "UKSG's opened report, https://www.uksg.org/newsletter/uksg-enews-613/holtzbrinck-can-take-over-springer-nature/, reproduces the Bundeskartellamt's 7 July 2026 clearance for Holtzbrinck to acquire sole control. Clearance does not establish completion. No completed transaction or revised ownership percentages were verified, so sole control is not asserted as a current edge.",
+    "The 2025 annual report describes pooled voting and nomination rights shared by GvH33 and Galileo Participation. Because the July 2026 transaction could change these arrangements, their continued operation is unresolved and they are not presented as current control edges.",
+    "The investor-relations shareholder chart was opened but its individual slices were not exposed in the accessible text. Other shareholders and any treasury holdings have not been quantified; no aggregate remainder is inferred.",
+    "Nature's official journal-information and portfolio-about pages failed to open. The publishing-brand relationship therefore relies on the opened Wikipedia article. Nature's opened legal notice identifies Springer Nature Limited as the website legal entity, which alone does not establish ownership of the journal.",
+    "The graph follows the publishing-brand route within three relationship levels. It does not reproduce the separate UK corporate chain found in Companies House or every intermediate holding company.",
+    "The subject is the British journal Nature, not the entire Nature Portfolio or similarly named magazines. No Wikidata identifiers were verified."
+  ],
+  "researchedAt": "2026-09-17T18:54:33.997Z",
+  "coverage": "partial",
+  "engine": "AI web research",
+  "revision": 3,
+  "id": "30b519a1-67e9-4a8d-b077-072e3cb91f20",
+  "publishedSnapshot": true
+}

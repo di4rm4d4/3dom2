@@ -1,0 +1,13 @@
+runtime/
+.env
+.env.*
+!.env.example
+*.log
+node_modules/
+.wrangler/
+.dev.vars
+.dev.vars.*
+.DS_Store
+coverage/
+*.zip
+*.tgz

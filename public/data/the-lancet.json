@@ -1,0 +1,252 @@
+{
+  "query": "The Lancet",
+  "kind": "academic",
+  "depth": 3,
+  "title": "The Lancet: publisher and corporate control",
+  "rootId": "the-lancet",
+  "summary": "The Lancet is a British general medical journal published by Elsevier Limited. Companies House records trace control through RELX (UK) Limited to RELX (Holdings) Limited, where the three-level research limit is reached.",
+  "nodes": [
+    {
+      "id": "the-lancet",
+      "name": "The Lancet",
+      "type": "publication",
+      "description": "United Kingdom-based, English-language, peer-reviewed general medical journal founded in 1823. Print ISSN 0140-6736. This record concerns the flagship journal, not the entire Lancet journal family.",
+      "country": "United Kingdom",
+      "website": "https://www.thelancet.com/",
+      "wikidataId": "Q939416",
+      "endpoint": "continue",
+      "endpointNote": "Publisher identified as Elsevier Limited.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/The_Lancet_logo.svg/250px-The_Lancet_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:The_Lancet_logo.svg",
+        "artist": "The Lancet",
+        "license": "Public domain"
+      }
+    },
+    {
+      "id": "elsevier-limited",
+      "name": "Elsevier Limited",
+      "type": "publisher",
+      "description": "British publishing company, Companies House number 01982084.",
+      "country": "United Kingdom",
+      "website": "https://www.elsevier.com/",
+      "wikidataId": "Q746413",
+      "endpoint": "continue",
+      "endpointNote": "Active corporate controller identified as RELX (UK) Limited.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Elsevier.svg/250px-Elsevier.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:Elsevier.svg",
+        "artist": "„Isaac Elzevir entwarf um 1620 das heute noch genutzte Markenzeichen der Firma“",
+        "license": "Public domain"
+      }
+    },
+    {
+      "id": "relx-uk-limited",
+      "name": "RELX (UK) Limited",
+      "type": "company",
+      "description": "British company, Companies House number 02746621, recorded as Elsevier Limited's corporate controller.",
+      "country": "United Kingdom",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Active corporate controller identified as RELX (Holdings) Limited.",
+      "image": null
+    },
+    {
+      "id": "relx-holdings-limited",
+      "name": "RELX (Holdings) Limited",
+      "type": "company",
+      "description": "British holding company, Companies House number 05807690, recorded as controller of RELX (UK) Limited.",
+      "country": "United Kingdom",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "depth_limit",
+      "endpointNote": "Reached three relationship levels from the journal. Ownership above this legal entity and ultimate shareholder interests are not mapped.",
+      "image": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "from": "the-lancet",
+      "to": "elsevier-limited",
+      "relationship": "published_by",
+      "percentage": null,
+      "asOf": "2026-04",
+      "description": "Publisher-supplied Crossmark metadata for a Lancet editorial explicitly identifies Elsevier Ltd as publisher. This supports publishing responsibility rather than an inference of equity ownership.",
+      "evidence": [
+        {
+          "url": "https://crossmark.crossref.org/dialog?cm_version=v2.0&doi=10.1016/S0140-6736(26)00707-5&domain=www.thelancet.com&uri_scheme=https:",
+          "title": "Crossmark: The future of preconception health",
+          "excerpt": "Published by Elsevier Ltd.",
+          "sourceType": "primary",
+          "publishedAt": "2026-04",
+          "accessedAt": "2026-09-18T10:42:27.382Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://crossmark.crossref.org/dialog?cm_version=v2.0&doi=10.1016/S0140-6736(26)00707-5&domain=www.thelancet.com&uri_scheme=https:"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-2",
+      "from": "elsevier-limited",
+      "to": "relx-uk-limited",
+      "relationship": "owned_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "The active register entry reports ownership of at least 75% of shares. An exact percentage is not disclosed. The entry was notified on 6 April 2016.",
+      "evidence": [
+        {
+          "url": "https://find-and-update.company-information.service.gov.uk/company/01982084/persons-with-significant-control",
+          "title": "ELSEVIER LIMITED persons with significant control — Companies House",
+          "excerpt": "Ownership of shares – 75% or more",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:42:27.382Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://find-and-update.company-information.service.gov.uk/company/01982084/persons-with-significant-control"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-3",
+      "from": "elsevier-limited",
+      "to": "relx-uk-limited",
+      "relationship": "controlled_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "RELX (UK) Limited is recorded as holding at least 75% of voting rights; the exact percentage is undisclosed.",
+      "evidence": [
+        {
+          "url": "https://find-and-update.company-information.service.gov.uk/company/01982084/persons-with-significant-control",
+          "title": "ELSEVIER LIMITED persons with significant control — Companies House",
+          "excerpt": "Ownership of voting rights",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:42:27.382Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://find-and-update.company-information.service.gov.uk/company/01982084/persons-with-significant-control"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-4",
+      "from": "elsevier-limited",
+      "to": "relx-uk-limited",
+      "relationship": "appointment_rights",
+      "percentage": null,
+      "asOf": null,
+      "description": "The active corporate controller has the right to appoint or remove directors.",
+      "evidence": [
+        {
+          "url": "https://find-and-update.company-information.service.gov.uk/company/01982084/persons-with-significant-control",
+          "title": "ELSEVIER LIMITED persons with significant control — Companies House",
+          "excerpt": "Right to appoint or remove directors",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:42:27.382Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://find-and-update.company-information.service.gov.uk/company/01982084/persons-with-significant-control"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-5",
+      "from": "relx-uk-limited",
+      "to": "relx-holdings-limited",
+      "relationship": "owned_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "The active register entry reports ownership of at least 75% of shares. An exact percentage is not disclosed. The entry was notified on 6 April 2016.",
+      "evidence": [
+        {
+          "url": "https://find-and-update.company-information.service.gov.uk/company/02746621/persons-with-significant-control",
+          "title": "RELX (UK) LIMITED persons with significant control — Companies House",
+          "excerpt": "Ownership of shares – 75% or more",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:42:27.382Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://find-and-update.company-information.service.gov.uk/company/02746621/persons-with-significant-control"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-6",
+      "from": "relx-uk-limited",
+      "to": "relx-holdings-limited",
+      "relationship": "controlled_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "RELX (Holdings) Limited is recorded as holding at least 75% of voting rights; the exact percentage is undisclosed.",
+      "evidence": [
+        {
+          "url": "https://find-and-update.company-information.service.gov.uk/company/02746621/persons-with-significant-control",
+          "title": "RELX (UK) LIMITED persons with significant control — Companies House",
+          "excerpt": "Ownership of voting rights",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:42:27.382Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://find-and-update.company-information.service.gov.uk/company/02746621/persons-with-significant-control"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-7",
+      "from": "relx-uk-limited",
+      "to": "relx-holdings-limited",
+      "relationship": "appointment_rights",
+      "percentage": null,
+      "asOf": null,
+      "description": "The active corporate controller has the right to appoint or remove directors.",
+      "evidence": [
+        {
+          "url": "https://find-and-update.company-information.service.gov.uk/company/02746621/persons-with-significant-control",
+          "title": "RELX (UK) LIMITED persons with significant control — Companies House",
+          "excerpt": "Right to appoint or remove directors",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:42:27.382Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://find-and-update.company-information.service.gov.uk/company/02746621/persons-with-significant-control"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    }
+  ],
+  "gaps": [
+    "An opened Wikipedia article states that Elsevier has owned The Lancet since 1991, but does not identify the precise legal title-owning entity. No separate journal ownership edge is inferred from publishing or copyright evidence.",
+    "Searches for recent sales or transfers found no announcement of a change in The Lancet's ownership. This is not proof that no change occurred.",
+    "Companies House pages show active control entries but no dated current ownership snapshot. Their notification dates are not treated as current observation dates, so asOf is null.",
+    "Elsevier Limited's register also contains a ceased entry for the same corporate controller and registration number, dated 28 April 2020. The graph uses the separately designated active entry.",
+    "The Lancet About page and attempted annual-report sources could not be retrieved successfully. The corporate chain relies on opened Companies House records.",
+    "The three-level limit prevents tracing above RELX (Holdings) Limited to the ultimate listed parent and its shareholders. Exact equity percentages and journal-specific editorial appointment rights remain unverified."
+  ],
+  "researchedAt": "2026-09-18T10:42:27.382Z",
+  "coverage": "partial",
+  "engine": "AI web research",
+  "revision": 1,
+  "id": "9baf6201-656f-4f8c-a357-2b8a4bb2ee49",
+  "publishedSnapshot": true
+}

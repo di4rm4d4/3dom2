@@ -1,0 +1,186 @@
+{
+  "liveResearch": false,
+  "maps": [
+    {
+      "id": "1bb9fcc1-6da1-4289-b1b5-a102f322e9f7",
+      "slug": "polska-press",
+      "name": "Polska Press",
+      "aliases": [
+        "polskapress"
+      ],
+      "researchedAt": "2026-09-17T18:49:51.268Z"
+    },
+    {
+      "id": "d60ddc59-6eed-464c-a8a4-63913f2215e0",
+      "slug": "the-guardian",
+      "name": "The Guardian",
+      "aliases": [
+        "Guardian"
+      ],
+      "researchedAt": "2026-09-17T18:58:14.435Z"
+    },
+    {
+      "id": "34dc3dcd-6b46-4a12-b3ac-2fb5095b8add",
+      "slug": "reuters",
+      "name": "Reuters",
+      "aliases": [],
+      "researchedAt": "2026-09-17T19:09:43.978Z"
+    },
+    {
+      "id": "1c902e51-cea2-4125-83a5-68c918a2b384",
+      "slug": "associated-press",
+      "name": "Associated Press",
+      "aliases": [
+        "AP",
+        "The Associated Press"
+      ],
+      "researchedAt": "2026-09-18T10:27:02.353Z"
+    },
+    {
+      "id": "7348f62d-bde7-4109-9b0b-f8cbdf59938e",
+      "slug": "bbc",
+      "name": "BBC",
+      "aliases": [
+        "BBC News",
+        "British Broadcasting Corporation"
+      ],
+      "researchedAt": "2026-09-18T10:27:17.622Z"
+    },
+    {
+      "id": "9260ea93-2fa2-4acd-b29e-14d78b549f44",
+      "slug": "financial-times",
+      "name": "Financial Times",
+      "aliases": [
+        "FT",
+        "The Financial Times"
+      ],
+      "researchedAt": "2026-09-18T10:29:16.605Z"
+    },
+    {
+      "id": "3ed1dea2-ca97-4b4c-ad10-89b3a272336e",
+      "slug": "the-economist",
+      "name": "The Economist",
+      "aliases": [
+        "Economist"
+      ],
+      "researchedAt": "2026-09-18T10:31:18.806Z"
+    },
+    {
+      "id": "2dba459c-14ba-49a5-a56a-9072f22de611",
+      "slug": "new-york-times",
+      "name": "The New York Times",
+      "aliases": [
+        "NYT",
+        "New York Times"
+      ],
+      "researchedAt": "2026-09-18T10:32:16.789Z"
+    },
+    {
+      "id": "a0a95da1-6570-4c9f-bb39-0623cd66a87a",
+      "slug": "washington-post",
+      "name": "The Washington Post",
+      "aliases": [
+        "Washington Post",
+        "WaPo"
+      ],
+      "researchedAt": "2026-09-18T10:32:47.256Z"
+    },
+    {
+      "id": "3866f490-cbfd-4e27-98c7-cdb596503863",
+      "slug": "wall-street-journal",
+      "name": "The Wall Street Journal",
+      "aliases": [
+        "WSJ",
+        "Wall Street Journal"
+      ],
+      "researchedAt": "2026-09-17T19:27:03.971Z"
+    },
+    {
+      "id": "4b61eca7-5a4e-4ae2-a156-4ee316c9de96",
+      "slug": "cnn",
+      "name": "CNN",
+      "aliases": [
+        "Cable News Network"
+      ],
+      "researchedAt": "2026-09-18T10:34:16.133Z"
+    },
+    {
+      "id": "11443399-065a-4b50-8893-4c14004a3bc1",
+      "slug": "fox-news",
+      "name": "Fox News",
+      "aliases": [
+        "Fox News Channel"
+      ],
+      "researchedAt": "2026-09-17T19:30:02.627Z"
+    },
+    {
+      "id": "142e624f-ba6f-4669-8e45-54dc71b39d02",
+      "slug": "le-monde",
+      "name": "Le Monde",
+      "aliases": [],
+      "researchedAt": "2026-09-18T10:35:34.717Z"
+    },
+    {
+      "id": "47a454ce-cae3-49bf-8c32-0d44c6c62252",
+      "slug": "le-figaro",
+      "name": "Le Figaro",
+      "aliases": [],
+      "researchedAt": "2026-09-18T10:35:55.360Z"
+    },
+    {
+      "id": "c386736c-64be-4d86-b4a5-96e3f4f7eb4d",
+      "slug": "der-spiegel",
+      "name": "Der Spiegel",
+      "aliases": [
+        "Spiegel"
+      ],
+      "researchedAt": "2026-09-18T10:38:48.578Z"
+    },
+    {
+      "id": "1830e9f9-3986-4989-81bc-c43bb1b751a7",
+      "slug": "el-pais",
+      "name": "El País",
+      "aliases": [
+        "El Pais"
+      ],
+      "researchedAt": "2026-09-18T10:37:41.576Z"
+    },
+    {
+      "id": "51c70a1f-932b-435a-8b81-5c70d4e8f730",
+      "slug": "gazeta-wyborcza",
+      "name": "Gazeta Wyborcza",
+      "aliases": [
+        "Wyborcza"
+      ],
+      "researchedAt": "2026-09-18T10:40:58.509Z"
+    },
+    {
+      "id": "30b519a1-67e9-4a8d-b077-072e3cb91f20",
+      "slug": "nature",
+      "name": "Nature",
+      "aliases": [
+        "Nature (journal)"
+      ],
+      "researchedAt": "2026-09-17T18:54:33.997Z"
+    },
+    {
+      "id": "39b166e8-02a8-47b4-973a-99407f7b58f3",
+      "slug": "science",
+      "name": "Science",
+      "aliases": [
+        "Science (journal)",
+        "Science Magazine"
+      ],
+      "researchedAt": "2026-09-18T10:40:17.229Z"
+    },
+    {
+      "id": "9baf6201-656f-4f8c-a357-2b8a4bb2ee49",
+      "slug": "the-lancet",
+      "name": "The Lancet",
+      "aliases": [
+        "Lancet"
+      ],
+      "researchedAt": "2026-09-18T10:42:27.382Z"
+    }
+  ]
+}

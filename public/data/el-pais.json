@@ -1,0 +1,165 @@
+{
+  "query": "El País",
+  "kind": "news",
+  "depth": 3,
+  "title": "El País (Spain): ownership and publishing chain",
+  "rootId": "el-pais-es",
+  "summary": "El País is the Madrid-based Spanish news publication at elpais.com. Its publisher, Ediciones El País, is wholly owned by Diario El País, which is wholly owned by PRISA Media. The graph stops at the requested three relationship levels.",
+  "nodes": [
+    {
+      "id": "el-pais-es",
+      "name": "El País",
+      "type": "publication",
+      "description": "Spanish general-interest daily newspaper founded in 1976, with print and digital editions and international coverage.",
+      "country": "Spain",
+      "website": "https://elpais.com/",
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Publishing entity identified in PRISA's consolidated accounts.",
+      "image": null
+    },
+    {
+      "id": "ediciones-el-pais",
+      "name": "Ediciones El País, S.L.U.",
+      "type": "publisher",
+      "description": "Spanish company responsible for publishing and operating El País.",
+      "country": "Spain",
+      "website": "https://elpais.com/",
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Its sole shareholder is Diario El País, S.L.U.",
+      "image": null
+    },
+    {
+      "id": "diario-el-pais",
+      "name": "Diario El País, S.L.U.",
+      "type": "company",
+      "description": "Spanish company holding the entire capital of Ediciones El País.",
+      "country": "Spain",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Wholly owned by PRISA Media, S.A.U.",
+      "image": null
+    },
+    {
+      "id": "prisa-media",
+      "name": "PRISA Media, S.A.U.",
+      "type": "company",
+      "description": "Spanish media company within the PRISA group.",
+      "country": "Spain",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "depth_limit",
+      "endpointNote": "Third relationship level. The legal notice and 2025 accounts identify Promotora de Informaciones, S.A. as its sole shareholder; further ownership and control tracing exceeds the specified depth.",
+      "image": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "from": "el-pais-es",
+      "to": "ediciones-el-pais",
+      "relationship": "published_by",
+      "percentage": null,
+      "asOf": "2025-12-31",
+      "description": "Annex I lists publishing, operating and selling El País as this company's activity.",
+      "evidence": [
+        {
+          "url": "https://www.prisa.com/uploads/2026/03/memoria-consolidada-2025.pdf",
+          "title": "PRISA — Memoria consolidada del ejercicio 2025, Annex I",
+          "excerpt": "Edición, explotación y venta del Diario El País.",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:37:41.576Z",
+          "validation": "document_available",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.prisa.com/uploads/2026/03/memoria-consolidada-2025.pdf"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-2",
+      "from": "ediciones-el-pais",
+      "to": "diario-el-pais",
+      "relationship": "owned_by",
+      "percentage": 100,
+      "asOf": "2025-12-31",
+      "description": "The accounts identify Diario El País as the holder of the entire capital; the legal notice independently confirms sole ownership.",
+      "evidence": [
+        {
+          "url": "https://www.prisa.com/uploads/2026/03/memoria-consolidada-2025.pdf",
+          "title": "PRISA — Memoria consolidada del ejercicio 2025, Annex I",
+          "excerpt": "Diario El País, S.L.U. 100%",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:37:41.576Z",
+          "validation": "document_available",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.prisa.com/uploads/2026/03/memoria-consolidada-2025.pdf"
+        },
+        {
+          "url": "https://elpais.com/info/aviso-legal/",
+          "title": "EL PAÍS — Aviso Legal",
+          "excerpt": "cuyo socio único es la sociedad DIARIO EL PAIS, S.L.U.",
+          "sourceType": "primary",
+          "publishedAt": "2025-07",
+          "accessedAt": "2026-09-18T10:37:41.576Z",
+          "validation": "unavailable",
+          "httpStatus": 403
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-3",
+      "from": "diario-el-pais",
+      "to": "prisa-media",
+      "relationship": "owned_by",
+      "percentage": 100,
+      "asOf": "2025-12-31",
+      "description": "The accounts identify PRISA Media as Diario El País's sole shareholder, consistent with the newspaper's legal notice.",
+      "evidence": [
+        {
+          "url": "https://www.prisa.com/uploads/2026/03/memoria-consolidada-2025.pdf",
+          "title": "PRISA — Memoria consolidada del ejercicio 2025, Annex I",
+          "excerpt": "Prisa Media, S.A.U. 100%",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:37:41.576Z",
+          "validation": "document_available",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.prisa.com/uploads/2026/03/memoria-consolidada-2025.pdf"
+        },
+        {
+          "url": "https://elpais.com/info/aviso-legal/",
+          "title": "EL PAÍS — Aviso Legal",
+          "excerpt": "participada a su vez al 100%",
+          "sourceType": "primary",
+          "publishedAt": "2025-07",
+          "accessedAt": "2026-09-18T10:37:41.576Z",
+          "validation": "unavailable",
+          "httpStatus": 403
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    }
+  ],
+  "gaps": [
+    "The name is ambiguous: other newspapers use El País, including publications in Uruguay and Colombia. This graph selects Spain's elpais.com; it does not combine those separate publications.",
+    "The three-level limit includes the publication-to-publisher relationship. PRISA Media's parent and that parent's significant shareholders, voting arrangements and ultimate controllers are outside this graph.",
+    "Searches for recent sales did not establish a completed disposal of the Spanish newspaper. The latest detailed ownership observation used is 31 December 2025; the legal notice was last updated in July 2025.",
+    "Separate voting or appointment rights were not established within the traced chain. No inference of personal ownership is made from executive or editorial positions.",
+    "Wikidata identifiers were not verified. All findings remain unreviewed."
+  ],
+  "researchedAt": "2026-09-18T10:37:41.576Z",
+  "coverage": "partial",
+  "engine": "AI web research",
+  "revision": 1,
+  "id": "1830e9f9-3986-4989-81bc-c43bb1b751a7",
+  "publishedSnapshot": true
+}

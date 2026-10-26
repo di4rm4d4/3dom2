@@ -1,0 +1,578 @@
+{
+  "query": "Der Spiegel",
+  "kind": "news",
+  "depth": 3,
+  "title": "DER SPIEGEL ownership and control",
+  "rootId": "der-spiegel",
+  "summary": "DER SPIEGEL is a German news magazine published in Hamburg. Current sources identify three shareholder groups: the employee partnership, RM Hamburg Holding (Bertelsmann), and the Augstein heirs. Their commonly reported interests are 50.5%, 25.5% and 24%, but legal-entity capital percentages differ; those differences are flagged below.",
+  "nodes": [
+    {
+      "id": "der-spiegel",
+      "name": "DER SPIEGEL",
+      "type": "publication",
+      "description": "German national news magazine founded in 1947, based in Hamburg. This graph follows the magazine's publisher.",
+      "country": "Germany",
+      "website": "https://www.spiegel.de/",
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Publisher identified; ownership traced through three relationship levels.",
+      "image": null
+    },
+    {
+      "id": "spiegel-verlag",
+      "name": "SPIEGEL-Verlag Rudolf Augstein GmbH & Co. KG",
+      "type": "publisher",
+      "description": "Hamburg publisher, registered under HRA 61755.",
+      "country": "Germany",
+      "website": "https://gruppe.spiegel.de/",
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Shareholders and general partner identified separately.",
+      "image": null
+    },
+    {
+      "id": "rudolf-augstein-gmbh",
+      "name": "Rudolf Augstein GmbH",
+      "type": "company",
+      "description": "General partner of SPIEGEL-Verlag, registered in Hamburg under HRB 13105.",
+      "country": "Germany",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Ownership supported by a notarized shareholder list dated January 2022; a newer list was not verified.",
+      "image": null
+    },
+    {
+      "id": "spiegel-mitarbeiter-kg",
+      "name": "Kommanditgesellschaft Beteiligungsgesellschaft für SPIEGEL-Mitarbeiter m.b.H. & Co.",
+      "type": "company",
+      "description": "Employee participation partnership and majority shareholder group, commonly called Mitarbeiter-KG.",
+      "country": "Germany",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Participating employees hold the partnership and elect its representatives.",
+      "image": null
+    },
+    {
+      "id": "rm-hamburg-holding",
+      "name": "RM Hamburg Holding GmbH",
+      "type": "company",
+      "description": "Bertelsmann subsidiary holding its SPIEGEL interest.",
+      "country": "Germany",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Wholly owned by Bertelsmann according to ownership reporting and 2025 financial statements.",
+      "image": null
+    },
+    {
+      "id": "augstein-heirs",
+      "name": "Erbengemeinschaft nach Karl Rudolf Augstein",
+      "type": "aggregate",
+      "description": "Community of Rudolf Augstein's heirs holding an undivided family interest.",
+      "country": "Germany",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Four members identified; individual beneficial fractions were not established.",
+      "image": null
+    },
+    {
+      "id": "bertelsmann",
+      "name": "Bertelsmann SE & Co. KGaA",
+      "type": "company",
+      "description": "German media group and parent of RM Hamburg Holding.",
+      "country": "Germany",
+      "website": "https://www.bertelsmann.com/",
+      "wikidataId": null,
+      "endpoint": "depth_limit",
+      "endpointNote": "Reached at relationship level three. Bertelsmann's own ownership and voting-control chain is outside this graph's depth limit.",
+      "image": null
+    },
+    {
+      "id": "participating-employees",
+      "name": "Participating SPIEGEL employees",
+      "type": "aggregate",
+      "description": "Eligible employees participating in the Mitarbeiter-KG; participation is not automatic for every employee.",
+      "country": "Germany",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "dispersed_shareholders",
+      "endpointNote": "Collective employee ownership endpoint. Individual holdings and a current membership register were not verified.",
+      "image": null
+    },
+    {
+      "id": "maria-sabine-augstein",
+      "name": "Maria Sabine Augstein",
+      "type": "person",
+      "description": "Member of the Augstein community of heirs.",
+      "country": "Germany",
+      "website": null,
+      "wikidataId": "Q1896284",
+      "endpoint": "individual",
+      "endpointNote": "Private individual; separate beneficial percentage not established.",
+      "image": null
+    },
+    {
+      "id": "jakob-augstein",
+      "name": "Thomas Jakob Augstein",
+      "type": "person",
+      "description": "Member and representative of the Augstein community of heirs.",
+      "country": "Germany",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "individual",
+      "endpointNote": "Private individual; representation does not imply sole ownership of the family's interest.",
+      "image": null
+    },
+    {
+      "id": "franziska-augstein",
+      "name": "Franziska Augstein",
+      "type": "person",
+      "description": "Member of the Augstein community of heirs.",
+      "country": "Germany",
+      "website": null,
+      "wikidataId": "Q1450076",
+      "endpoint": "individual",
+      "endpointNote": "Private individual; separate beneficial percentage not established.",
+      "image": null
+    },
+    {
+      "id": "julian-robert-augstein",
+      "name": "Julian Robert Augstein",
+      "type": "person",
+      "description": "Member of the Augstein community of heirs.",
+      "country": "Germany",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "individual",
+      "endpointNote": "Private individual; separate beneficial percentage not established.",
+      "image": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "from": "der-spiegel",
+      "to": "spiegel-verlag",
+      "relationship": "published_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "Media Ownership Monitor explicitly identifies this company as the magazine's publisher.",
+      "evidence": [
+        {
+          "url": "https://germany.mom-gmr.org/de/media/print/outlet/der-spiegel-113397/",
+          "title": "Der Spiegel | Media Ownership Monitor Germany",
+          "excerpt": "Der Spiegel wird herausgegeben von der SPIEGEL-Verlag Rudolf Augstein GmbH & Co. KG",
+          "sourceType": "secondary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:38:48.577Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://germany.mom-gmr.org/de/media/print/outlet/der-spiegel-113397/"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-2",
+      "from": "spiegel-verlag",
+      "to": "spiegel-mitarbeiter-kg",
+      "relationship": "owned_by",
+      "percentage": null,
+      "asOf": "2026-05-21",
+      "description": "Current reporting gives the employee group's interest as 50.5%. The precise direct partnership-capital percentage is left unresolved because headline group percentages differ from legal-entity capital figures.",
+      "evidence": [
+        {
+          "url": "https://medien.epd.de/article/4682",
+          "title": "„Spiegel“-Gruppe 2025 mit mehr Umsatz und weniger Gewinn",
+          "excerpt": "Die Mitarbeiter KG hält 50,5 Prozent am Spiegel-Verlag",
+          "sourceType": "secondary",
+          "publishedAt": "2026-05-21",
+          "accessedAt": "2026-09-18T10:38:48.577Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://medien.epd.de/article/4682"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-3",
+      "from": "spiegel-verlag",
+      "to": "rm-hamburg-holding",
+      "relationship": "owned_by",
+      "percentage": 25.25,
+      "asOf": "2025-12-31",
+      "description": "Bertelsmann's 2025 financial statements list 25.25% for this specific legal entity. May 2026 reporting describes the holding through RM Hamburg as 25.5%, reflecting an unresolved difference in presentation.",
+      "evidence": [
+        {
+          "url": "https://bcc-cdn.bertelsmann.com/asset/908027409915/document_9ad5o9dui12i903alebd4vrl77/Bertelsmann-SE-Co-KGaA-Jahresabschluss-2025.pdf?content-disposition=inline",
+          "title": "Bertelsmann SE & Co. KGaA: Jahresabschluss 2025",
+          "excerpt": "SPIEGEL-Verlag Rudolf Augstein GmbH & Co. KG, Hamburg 103.208 29.921 25,25% 25,25%",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:38:48.577Z",
+          "validation": "document_available",
+          "httpStatus": 200,
+          "resolvedUrl": "https://bcc-cdn.bertelsmann.com/asset/908027409915/document_9ad5o9dui12i903alebd4vrl77/Bertelsmann-SE-Co-KGaA-Jahresabschluss-2025.pdf?content-disposition=inline"
+        },
+        {
+          "url": "https://medien.epd.de/article/4682",
+          "title": "„Spiegel“-Gruppe 2025 mit mehr Umsatz und weniger Gewinn",
+          "excerpt": "über die RM Hamburg Holding",
+          "sourceType": "secondary",
+          "publishedAt": "2026-05-21",
+          "accessedAt": "2026-09-18T10:38:48.577Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://medien.epd.de/article/4682"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-4",
+      "from": "spiegel-verlag",
+      "to": "augstein-heirs",
+      "relationship": "owned_by",
+      "percentage": null,
+      "asOf": "2026-05-21",
+      "description": "Current reporting attributes 24% to the heirs. The exact direct partnership-capital percentage is not asserted because the sources use differing legal-entity and group presentations.",
+      "evidence": [
+        {
+          "url": "https://medien.epd.de/article/4682",
+          "title": "„Spiegel“-Gruppe 2025 mit mehr Umsatz und weniger Gewinn",
+          "excerpt": "die 24 Prozent halten",
+          "sourceType": "secondary",
+          "publishedAt": "2026-05-21",
+          "accessedAt": "2026-09-18T10:38:48.577Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://medien.epd.de/article/4682"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-5",
+      "from": "spiegel-verlag",
+      "to": "rudolf-augstein-gmbh",
+      "relationship": "managed_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "The publisher's official legal notice identifies Rudolf Augstein GmbH as its general partner. This records the general-partner role without assigning an unverified capital interest.",
+      "evidence": [
+        {
+          "url": "https://gruppe.spiegel.de/impressum",
+          "title": "Impressum | SPIEGEL-Gruppe",
+          "excerpt": "Komplementärin Rudolf Augstein GmbH",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:38:48.577Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://gruppe.spiegel.de/impressum"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-6",
+      "from": "spiegel-verlag",
+      "to": "spiegel-mitarbeiter-kg",
+      "relationship": "appointment_rights",
+      "percentage": null,
+      "asOf": null,
+      "description": "Elected employee representatives participate with the other shareholders in important decisions, including leadership appointments. The source does not establish unilateral appointment power.",
+      "evidence": [
+        {
+          "url": "https://gruppe.spiegel.de/unternehmen",
+          "title": "Über uns | SPIEGEL-Gruppe",
+          "excerpt": "entscheiden über ihre gewählten Vertreter in allen wichtigen Fragen mit",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:38:48.577Z",
+          "validation": "page_available",
+          "httpStatus": 200,
+          "resolvedUrl": "https://gruppe.spiegel.de/unternehmen"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-7",
+      "from": "rudolf-augstein-gmbh",
+      "to": "spiegel-mitarbeiter-kg",
+      "relationship": "owned_by",
+      "percentage": 50.5,
+      "asOf": "2022-01-13",
+      "description": "The notarized shareholder list records €15,150 of the GmbH's €30,000 capital for the employee partnership.",
+      "evidence": [
+        {
+          "url": "https://images.mom-gmr.org/GMR/GER/Documents/403-2555_import.pdf",
+          "title": "Gesellschafterliste der Rudolf Augstein GmbH, 13. Januar 2022",
+          "excerpt": "50,5",
+          "sourceType": "primary",
+          "publishedAt": "2022-01-13",
+          "accessedAt": "2026-09-18T10:38:48.577Z",
+          "validation": "document_available",
+          "httpStatus": 200,
+          "resolvedUrl": "https://images.mom-gmr.org/GMR/GER/Documents/403-2555_import.pdf"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-8",
+      "from": "rudolf-augstein-gmbh",
+      "to": "rm-hamburg-holding",
+      "relationship": "owned_by",
+      "percentage": 25.5,
+      "asOf": "2022-01-13",
+      "description": "The notarized shareholder list records €7,650 of the GmbH's capital for RM Hamburg Holding.",
+      "evidence": [
+        {
+          "url": "https://images.mom-gmr.org/GMR/GER/Documents/403-2555_import.pdf",
+          "title": "Gesellschafterliste der Rudolf Augstein GmbH, 13. Januar 2022",
+          "excerpt": "25,5",
+          "sourceType": "primary",
+          "publishedAt": "2022-01-13",
+          "accessedAt": "2026-09-18T10:38:48.578Z",
+          "validation": "document_available",
+          "httpStatus": 200,
+          "resolvedUrl": "https://images.mom-gmr.org/GMR/GER/Documents/403-2555_import.pdf"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-9",
+      "from": "rudolf-augstein-gmbh",
+      "to": "augstein-heirs",
+      "relationship": "owned_by",
+      "percentage": 24,
+      "asOf": "2022-01-13",
+      "description": "The notarized shareholder list records the community of heirs as holder of 24% of the GmbH.",
+      "evidence": [
+        {
+          "url": "https://images.mom-gmr.org/GMR/GER/Documents/403-2555_import.pdf",
+          "title": "Gesellschafterliste der Rudolf Augstein GmbH, 13. Januar 2022",
+          "excerpt": "24,0",
+          "sourceType": "primary",
+          "publishedAt": "2022-01-13",
+          "accessedAt": "2026-09-18T10:38:48.578Z",
+          "validation": "document_available",
+          "httpStatus": 200,
+          "resolvedUrl": "https://images.mom-gmr.org/GMR/GER/Documents/403-2555_import.pdf"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-10",
+      "from": "rm-hamburg-holding",
+      "to": "bertelsmann",
+      "relationship": "owned_by",
+      "percentage": 100,
+      "asOf": "2025-12-31",
+      "description": "The 2025 financial statements record full ownership; Media Ownership Monitor also explicitly identifies RM Hamburg as Bertelsmann's wholly owned subsidiary.",
+      "evidence": [
+        {
+          "url": "https://bcc-cdn.bertelsmann.com/asset/908027409915/document_9ad5o9dui12i903alebd4vrl77/Bertelsmann-SE-Co-KGaA-Jahresabschluss-2025.pdf?content-disposition=inline",
+          "title": "Bertelsmann SE & Co. KGaA: Jahresabschluss 2025",
+          "excerpt": "RM Hamburg Holding GmbH, Hamburg",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:38:48.578Z",
+          "validation": "document_available",
+          "httpStatus": 200,
+          "resolvedUrl": "https://bcc-cdn.bertelsmann.com/asset/908027409915/document_9ad5o9dui12i903alebd4vrl77/Bertelsmann-SE-Co-KGaA-Jahresabschluss-2025.pdf?content-disposition=inline"
+        },
+        {
+          "url": "https://germany.mom-gmr.org/de/media/print/outlet/der-spiegel-113397/",
+          "title": "Der Spiegel | Media Ownership Monitor Germany",
+          "excerpt": "100-prozentige Tochter",
+          "sourceType": "secondary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:38:48.578Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://germany.mom-gmr.org/de/media/print/outlet/der-spiegel-113397/"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-11",
+      "from": "spiegel-mitarbeiter-kg",
+      "to": "participating-employees",
+      "relationship": "owned_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "SPIEGEL identifies senior employees as members of the employee ownership partnership.",
+      "evidence": [
+        {
+          "url": "https://gruppe.spiegel.de/unternehmen",
+          "title": "Über uns | SPIEGEL-Gruppe",
+          "excerpt": "Letzterer gehören die seniorigen Mit­arbeitenden des SPIEGEL an.",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:38:48.578Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://gruppe.spiegel.de/unternehmen"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-12",
+      "from": "spiegel-mitarbeiter-kg",
+      "to": "participating-employees",
+      "relationship": "appointment_rights",
+      "percentage": null,
+      "asOf": null,
+      "description": "Participating employees elect the partnership's five managing representatives, with seats allocated across editorial, documentation/archive and publishing employees.",
+      "evidence": [
+        {
+          "url": "https://germany.mom-gmr.org/de/owners/individual-owners/owner/spiegel-employees-112196/",
+          "title": "Spiegel-Mitarbeiter | Media Ownership Monitor Germany",
+          "excerpt": "Die Mitarbeiterinnen und Mitarbeiter wählen alle drei Jahre die fünf Geschäftsführer der Mitarbeiter-KG",
+          "sourceType": "secondary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:38:48.578Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://germany.mom-gmr.org/de/owners/individual-owners/owner/spiegel-employees-112196/"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-13",
+      "from": "augstein-heirs",
+      "to": "maria-sabine-augstein",
+      "relationship": "owned_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "Co-member of the community inheriting the undivided family holding; no individual fraction asserted.",
+      "evidence": [
+        {
+          "url": "https://germany.mom-gmr.org/de/owners/individual-owners/owner/the-augstein-family-112198/",
+          "title": "Familie Augstein | Media Ownership Monitor Germany",
+          "excerpt": "Maria Sabine Augstein",
+          "sourceType": "secondary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:38:48.578Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://germany.mom-gmr.org/de/owners/individual-owners/owner/the-augstein-family-112198/"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-14",
+      "from": "augstein-heirs",
+      "to": "jakob-augstein",
+      "relationship": "owned_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "Co-member of the community inheriting the undivided family holding; no individual fraction asserted.",
+      "evidence": [
+        {
+          "url": "https://germany.mom-gmr.org/de/owners/individual-owners/owner/the-augstein-family-112198/",
+          "title": "Familie Augstein | Media Ownership Monitor Germany",
+          "excerpt": "Thomas Jakob Augstein",
+          "sourceType": "secondary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:38:48.578Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://germany.mom-gmr.org/de/owners/individual-owners/owner/the-augstein-family-112198/"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-15",
+      "from": "augstein-heirs",
+      "to": "franziska-augstein",
+      "relationship": "owned_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "Co-member of the community inheriting the undivided family holding; no individual fraction asserted.",
+      "evidence": [
+        {
+          "url": "https://germany.mom-gmr.org/de/owners/individual-owners/owner/the-augstein-family-112198/",
+          "title": "Familie Augstein | Media Ownership Monitor Germany",
+          "excerpt": "Franziska Augstein",
+          "sourceType": "secondary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:38:48.578Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://germany.mom-gmr.org/de/owners/individual-owners/owner/the-augstein-family-112198/"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-16",
+      "from": "augstein-heirs",
+      "to": "julian-robert-augstein",
+      "relationship": "owned_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "Co-member of the community inheriting the undivided family holding; no individual fraction asserted.",
+      "evidence": [
+        {
+          "url": "https://germany.mom-gmr.org/de/owners/individual-owners/owner/the-augstein-family-112198/",
+          "title": "Familie Augstein | Media Ownership Monitor Germany",
+          "excerpt": "Julian Robert Augstein",
+          "sourceType": "secondary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:38:48.578Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://germany.mom-gmr.org/de/owners/individual-owners/owner/the-augstein-family-112198/"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    }
+  ],
+  "gaps": [
+    "Research cutoff: 2026-09-18. Searches for recent sales found no verified completed transaction superseding the shareholder groups confirmed in May 2026; this does not establish that no transaction occurred.",
+    "Reported group interests of 50.5%, 25.5% and 24% must not automatically be treated as exact direct capital percentages in the publisher partnership. Bertelsmann's 2025 statements list 25.25% for SPIEGEL-Verlag. The employee and heir direct partnership percentages, and any general-partner capital interest, remain unresolved.",
+    "The Rudolf Augstein GmbH shareholder list is dated 2022-01-13. Current official material corroborates the same three shareholder groups, but a newer GmbH shareholder list was not verified.",
+    "The official source confirms employee participation in leadership appointments, but current voting thresholds, veto rights and detailed appointment rules were not established.",
+    "The graph covers the magazine's publisher. The distinct operating-company arrangements for spiegel.de were not separately mapped.",
+    "Bertelsmann is reached at level three; its upstream owners and voting arrangements were not expanded.",
+    "Individual fractions within the undivided Augstein estate and the current employee-partnership membership distribution were not verified.",
+    "No Wikidata identifiers were verified from opened sources."
+  ],
+  "researchedAt": "2026-09-18T10:38:48.578Z",
+  "coverage": "partial",
+  "engine": "AI web research",
+  "revision": 1,
+  "id": "c386736c-64be-4d86-b4a5-96e3f4f7eb4d",
+  "publishedSnapshot": true
+}

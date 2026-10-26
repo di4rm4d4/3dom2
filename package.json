@@ -1,0 +1,27 @@
+{
+  "name": "press-trace",
+  "version": "1.0.0",
+  "description": "3DOM2: source-linked, reviewable ownership maps for news publications and academic journals.",
+  "license": "MIT",
+  "author": "Diana McDermott",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/di4rm4d4/3dom2.git"
+  },
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "start:env": "node --env-file=.env server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "dev:cloud": "wrangler dev --local",
+    "deploy": "wrangler deploy",
+    "check:deploy": "wrangler deploy --dry-run --outdir=.wrangler/dry-run"
+  },
+  "devDependencies": {
+    "wrangler": "4.134.0"
+  }
+}

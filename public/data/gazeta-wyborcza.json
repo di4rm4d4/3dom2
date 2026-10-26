@@ -1,0 +1,304 @@
+{
+  "query": "Gazeta Wyborcza",
+  "kind": "news",
+  "depth": 3,
+  "title": "Gazeta Wyborcza: ownership and control",
+  "rootId": "gazeta-wyborcza",
+  "summary": "Gazeta Wyborcza is a Polish national news daily with local editions and the Wyborcza.pl website. Its publisher, Wyborcza sp. z o.o., is wholly owned by listed company Agora S.A. Agora-Holding holds 11.60% of Agora’s capital but 35.36% of its voting rights, alongside special nomination rights. Other major shareholders include OFE PZU Złota Jesień and MDIF Media Holdings I, LLC.",
+  "nodes": [
+    {
+      "id": "gazeta-wyborcza",
+      "name": "Gazeta Wyborcza",
+      "type": "publication",
+      "description": "Polish national general-interest news daily, founded in 1989, with local editions and digital publication at Wyborcza.pl.",
+      "country": "Poland",
+      "website": "https://wyborcza.pl/",
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "The current masthead identifies its publisher.",
+      "image": null
+    },
+    {
+      "id": "wyborcza-sp-z-oo",
+      "name": "Wyborcza sp. z o.o.",
+      "type": "publisher",
+      "description": "Warsaw-based publisher of Gazeta Wyborcza; KRS 0001053885.",
+      "country": "Poland",
+      "website": "https://wyborcza.pl/",
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Agora’s media-services disclosure identifies Agora S.A. as its sole shareholder.",
+      "image": null
+    },
+    {
+      "id": "agora-sa",
+      "name": "Agora S.A.",
+      "type": "company",
+      "description": "Polish media and entertainment group listed on the Warsaw Stock Exchange; KRS 0000059944.",
+      "country": "Poland",
+      "website": "https://www.agora.pl/",
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Major equity holdings and Agora-Holding’s voting and nomination rights are distinguished below.",
+      "image": null
+    },
+    {
+      "id": "agora-holding",
+      "name": "Agora-Holding sp. z o.o.",
+      "type": "company",
+      "description": "Agora shareholder holding all registered preferred series A shares and the largest disclosed voting block.",
+      "country": "Poland",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "depth_limit",
+      "endpointNote": "Reached at relationship level three. Its own shareholders and ultimate controllers were not traced further.",
+      "image": null
+    },
+    {
+      "id": "ofe-pzu-zlota-jesien",
+      "name": "Otwarty Fundusz Emerytalny PZU Złota Jesień",
+      "type": "fund",
+      "description": "Polish pension fund directly identified as an Agora shareholder. The holding belongs to the fund, not its management company.",
+      "country": "Poland",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "depth_limit",
+      "endpointNote": "Reached at relationship level three; fund governance and management were not expanded.",
+      "image": null
+    },
+    {
+      "id": "mdif-media-holdings-i",
+      "name": "MDIF Media Holdings I, LLC",
+      "type": "company",
+      "description": "Shareholder named in Agora’s June 2026 meeting disclosure; the interim report associates it with Media Development Investment Fund, Inc.",
+      "country": null,
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "depth_limit",
+      "endpointNote": "Reached at relationship level three. The ownership chain above this holding vehicle was not expanded.",
+      "image": null
+    },
+    {
+      "id": "agora-other-shareholders",
+      "name": "Other Agora shareholders",
+      "type": "aggregate",
+      "description": "Aggregate remainder outside the three major holdings shown individually, including other institutional funds and individual investors.",
+      "country": null,
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "dispersed_shareholders",
+      "endpointNote": "An aggregate of remaining holdings, not a single coordinated owner; individual positions are not fully resolved.",
+      "image": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "from": "gazeta-wyborcza",
+      "to": "wyborcza-sp-z-oo",
+      "relationship": "published_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "The current publication contact page explicitly names Wyborcza sp. z o.o. as publisher. This establishes publishing responsibility.",
+      "evidence": [
+        {
+          "url": "https://wyborcza.pl/centrumpomocygw/0,134959.html",
+          "title": "Kontakt – Redakcja Gazety Wyborczej",
+          "excerpt": "Wydawca: Wyborcza sp. z o.o.",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:40:58.509Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://wyborcza.pl/centrumpomocygw/0,134959.html"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-2",
+      "from": "wyborcza-sp-z-oo",
+      "to": "agora-sa",
+      "relationship": "owned_by",
+      "percentage": 100,
+      "asOf": null,
+      "description": "Agora’s current media-services disclosure identifies Agora S.A. as the holder of all shares in Wyborcza sp. z o.o.",
+      "evidence": [
+        {
+          "url": "https://raportcsr.agora.pl/informacje-o-uslugach-medialnych",
+          "title": "Informacje dotyczące usług medialnych grupy kapitałowej Agora",
+          "excerpt": "posiada całość udziałów spółki",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:40:58.509Z",
+          "validation": "page_available",
+          "httpStatus": 200,
+          "resolvedUrl": "https://raportcsr.agora.pl/informacje-o-uslugach-medialnych"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-3",
+      "from": "agora-sa",
+      "to": "agora-holding",
+      "relationship": "owned_by",
+      "percentage": 11.6,
+      "asOf": "2026-08-12",
+      "description": "The first-half report records 5,401,852 shares and 11.60% of capital, using the June meeting register and reporting no material subsequent change.",
+      "evidence": [
+        {
+          "url": "https://www.agora.pl/download/pobierz/sprawozdanie-zarzadu-grupy-agora-za-1-pol-2026-r",
+          "title": "Sprawozdanie Zarządu z działalności Grupy Agora za pierwsze półrocze 2026 r.",
+          "excerpt": "11,60",
+          "sourceType": "primary",
+          "publishedAt": "2026-08-13",
+          "accessedAt": "2026-09-18T10:40:58.509Z",
+          "validation": "document_available",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.agora.pl/download/pobierz/sprawozdanie-zarzadu-grupy-agora-za-1-pol-2026-r"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-4",
+      "from": "agora-sa",
+      "to": "ofe-pzu-zlota-jesien",
+      "relationship": "owned_by",
+      "percentage": 17.44,
+      "asOf": "2026-08-12",
+      "description": "The interim report attributes 8,126,434 shares to the pension fund, reporting 17.44% of capital and 12.76% of total votes. The capital percentage is reproduced as published.",
+      "evidence": [
+        {
+          "url": "https://www.agora.pl/download/pobierz/sprawozdanie-zarzadu-grupy-agora-za-1-pol-2026-r",
+          "title": "Sprawozdanie Zarządu z działalności Grupy Agora za pierwsze półrocze 2026 r.",
+          "excerpt": "17,44",
+          "sourceType": "primary",
+          "publishedAt": "2026-08-13",
+          "accessedAt": "2026-09-18T10:40:58.509Z",
+          "validation": "document_available",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.agora.pl/download/pobierz/sprawozdanie-zarzadu-grupy-agora-za-1-pol-2026-r"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-5",
+      "from": "agora-sa",
+      "to": "mdif-media-holdings-i",
+      "relationship": "owned_by",
+      "percentage": 11.5,
+      "asOf": "2026-08-12",
+      "description": "The interim report records 5,355,645 shares, representing 11.50% of capital and 8.41% of total votes. The June meeting disclosure names the holding vehicle directly.",
+      "evidence": [
+        {
+          "url": "https://www.agora.pl/download/pobierz/sprawozdanie-zarzadu-grupy-agora-za-1-pol-2026-r",
+          "title": "Sprawozdanie Zarządu z działalności Grupy Agora za pierwsze półrocze 2026 r.",
+          "excerpt": "MDIF Media Holdings I, LLC",
+          "sourceType": "primary",
+          "publishedAt": "2026-08-13",
+          "accessedAt": "2026-09-18T10:40:58.509Z",
+          "validation": "document_available",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.agora.pl/download/pobierz/sprawozdanie-zarzadu-grupy-agora-za-1-pol-2026-r"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-6",
+      "from": "agora-sa",
+      "to": "agora-holding",
+      "relationship": "controlled_by",
+      "percentage": 35.36,
+      "asOf": "2026-06-29",
+      "description": "Voting influence: Agora-Holding held 22,528,252 votes, or 35.36% of all voting rights. It exercised 56.8% of votes represented at this meeting. This does not establish an absolute majority of all company votes.",
+      "evidence": [
+        {
+          "url": "https://www.agora.pl/18-2026-akcjonariusze-posiadajacy-co-najmniej-5-glosow-na-zwyczajnym-walnym-zgromadzeniu-agory-s-a-w-dniu-29-czerwca-2026-r",
+          "title": "18/2026 Akcjonariusze posiadający co najmniej 5% głosów na Zwyczajnym Walnym Zgromadzeniu",
+          "excerpt": "35,36% ogólnej liczby głosów",
+          "sourceType": "primary",
+          "publishedAt": "2026-06-30",
+          "accessedAt": "2026-09-18T10:40:58.509Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.agora.pl/18-2026-akcjonariusze-posiadajacy-co-najmniej-5-glosow-na-zwyczajnym-walnym-zgromadzeniu-agory-s-a-w-dniu-29-czerwca-2026-r"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-7",
+      "from": "agora-sa",
+      "to": "agora-holding",
+      "relationship": "appointment_rights",
+      "percentage": null,
+      "asOf": "2026-06-22",
+      "description": "Agora-Holding submitted supervisory-board candidates under section 21(1)(a)(i) of Agora’s statute as holder of all preferred series A shares. This edge records nomination rights, not unilateral appointment of the entire board.",
+      "evidence": [
+        {
+          "url": "https://raportcsr.agora.pl/14-2026-zgloszenie-przez-akcjonariusza-kandydatow-do-rady-nadzorczej-spolki-oraz-projektu-uchwaly-w-zakresie-objetym-punktem-15-porzadku-obrad-zwyczajnego-walnego-zgromadzenia-spolki-zwolanego-na-dzien-29-czerwca-2026-r",
+          "title": "14/2026 Zgłoszenie przez akcjonariusza kandydatów do Rady Nadzorczej Spółki",
+          "excerpt": "akcjonariusza posiadającego 100% uprzywilejowanych akcji imiennych serii A",
+          "sourceType": "primary",
+          "publishedAt": "2026-06-23",
+          "accessedAt": "2026-09-18T10:40:58.509Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://raportcsr.agora.pl/14-2026-zgloszenie-przez-akcjonariusza-kandydatow-do-rady-nadzorczej-spolki-oraz-projektu-uchwaly-w-zakresie-objetym-punktem-15-porzadku-obrad-zwyczajnego-walnego-zgromadzenia-spolki-zwolanego-na-dzien-29-czerwca-2026-r"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-8",
+      "from": "agora-sa",
+      "to": "agora-other-shareholders",
+      "relationship": "owned_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "Other shareholders include several pension funds and investment-fund portfolios. Their disclosed positions have differing observation dates, so no single current remainder percentage is asserted. Fund-manager labels are not treated as beneficial ownership by those managers.",
+      "evidence": [
+        {
+          "url": "https://www.biznesradar.pl/akcjonariat/AGORA",
+          "title": "Akcjonariat: akcjonariusze AGORA SA",
+          "excerpt": "Pozostali akcjonariusze",
+          "sourceType": "secondary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:40:58.509Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.biznesradar.pl/akcjonariat/AGORA"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    }
+  ],
+  "gaps": [
+    "Research cutoff: 2026-09-18. Searches for recent sales found no supported change to the publisher–Agora chain; this does not exclude undisclosed transactions.",
+    "The latest opened dated major-shareholder observation is 2026-08-12. Some corporate website shareholder tables retain older figures and labels; the 2026 interim report takes precedence.",
+    "The interim report gives PZU’s capital holding as 17.44%, while the secondary table gives 17.45% for the same share count. The graph preserves the primary report’s figure.",
+    "Smaller holdings have mixed reporting dates. They remain within the aggregate remainder rather than being presented as a synchronized current shareholder register.",
+    "Ownership above Agora-Holding, MDIF Media Holdings I and the pension fund is outside the three-relationship limit. No ultimate individual controller is established.",
+    "The publisher disclosure lists executives as beneficial owners but supplies no personal equity percentages. No personal ownership edges were inferred from those listings.",
+    "The full current statute and a current official company-register extract were not obtained. The nomination-rights edge is limited to the right evidenced by the June 2026 issuer announcement.",
+    "Undated masthead and media-services disclosures have null observation dates. Wikidata identifiers were not verified."
+  ],
+  "researchedAt": "2026-09-18T10:40:58.509Z",
+  "coverage": "partial",
+  "engine": "AI web research",
+  "revision": 1,
+  "id": "51c70a1f-932b-435a-8b81-5c70d4e8f730",
+  "publishedSnapshot": true
+}

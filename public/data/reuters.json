@@ -1,0 +1,272 @@
+{
+  "query": "Reuters",
+  "kind": "news",
+  "depth": 3,
+  "title": "Reuters ownership and control",
+  "rootId": "reuters",
+  "summary": "Reuters is a British international news agency within Canada’s Thomson Reuters Corporation. Woodbridge and its affiliates held approximately 71% of Thomson Reuters’ common shares as of June 30, 2026. The Founders Share Company holds separate protective rights. Research conducted for September 17, 2026; findings are unreviewed.",
+  "nodes": [
+    {
+      "id": "reuters",
+      "name": "Reuters",
+      "type": "publication",
+      "description": "British international news agency and news service, with its UK editorial headquarters in London and operations worldwide.",
+      "country": "United Kingdom",
+      "website": "https://www.reuters.com/",
+      "wikidataId": "Q130879",
+      "endpoint": "continue",
+      "endpointNote": "Identified as the Reuters news business within Thomson Reuters.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Reuters_logo_2024.svg/250px-Reuters_logo_2024.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:Reuters_logo_2024.svg",
+        "artist": "Reuters",
+        "license": "Public domain"
+      }
+    },
+    {
+      "id": "thomson-reuters",
+      "name": "Thomson Reuters Corporation",
+      "type": "company",
+      "description": "Canadian publicly traded information and technology company whose businesses include Reuters.",
+      "country": "Canada",
+      "website": "https://www.thomsonreuters.com/",
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Ownership and special protective control rights are traced separately.",
+      "image": null
+    },
+    {
+      "id": "woodbridge",
+      "name": "The Woodbridge Company Limited",
+      "type": "company",
+      "description": "Private Thomson family investment company. The reported 71% interest includes affiliated companies, rather than Woodbridge alone.",
+      "country": "Canada",
+      "website": null,
+      "wikidataId": "Q5951386",
+      "endpoint": "continue",
+      "endpointNote": "Followed to its disclosed holding company, Thomson Investments Limited.",
+      "image": null
+    },
+    {
+      "id": "thomson-investments",
+      "name": "Thomson Investments Limited",
+      "type": "company",
+      "description": "Holding company of Woodbridge involved in the Thomson family’s ownership arrangements.",
+      "country": "Canada",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "depth_limit",
+      "endpointNote": "Third relationship level reached. The filings identify the 2003 TIL Settlement as holding the relevant holding-company shares; that additional relationship is beyond the graph’s depth limit.",
+      "image": null
+    },
+    {
+      "id": "other-shareholders",
+      "name": "Other Thomson Reuters common shareholders",
+      "type": "aggregate",
+      "description": "Aggregate common-share interests outside Woodbridge and its affiliates; approximately 29% by subtraction from the reported rounded 71% holding.",
+      "country": null,
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "dispersed_shareholders",
+      "endpointNote": "Remainder is aggregated, not an identified single owner. Individual positions were not established.",
+      "image": null
+    },
+    {
+      "id": "founders-share-company",
+      "name": "Thomson Reuters Founders Share Company Limited",
+      "type": "company",
+      "description": "Corporate guardian of the Trust Principles, with special voting and transaction-consent rights.",
+      "country": null,
+      "website": "https://www.thomsonreuters.com/en/about-us/trust-principles",
+      "wikidataId": "Q124709222",
+      "endpoint": "unresolved",
+      "endpointNote": "Protective rights are verified. Its trustees are selected through a nomination committee and appointed by its board; ultimate legal membership or ownership was not established.",
+      "image": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "from": "reuters",
+      "to": "thomson-reuters",
+      "relationship": "parent_company",
+      "percentage": null,
+      "asOf": "2026-07-08",
+      "description": "The company identifies Reuters as part of Thomson Reuters. This represents the news business’s corporate parent, without asserting an unverified intermediate legal-entity chain.",
+      "evidence": [
+        {
+          "url": "https://www.thomsonreuters.com/en/press-releases/2026/july/thomson-reuters-second-quarter-2026-earnings-announcement-and-webcast",
+          "title": "Thomson Reuters Second Quarter 2026 Earnings Announcement and Webcast",
+          "excerpt": "Reuters, part of Thomson Reuters",
+          "sourceType": "primary",
+          "publishedAt": "2026-07-08",
+          "accessedAt": "2026-09-17T19:09:43.978Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.thomsonreuters.com/en/press-releases/2026/july/thomson-reuters-second-quarter-2026-earnings-announcement-and-webcast"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-2",
+      "from": "thomson-reuters",
+      "to": "woodbridge",
+      "relationship": "owned_by",
+      "percentage": 71,
+      "asOf": "2026-06-30",
+      "description": "Approximately 71% beneficial ownership of common shares by Woodbridge together with its affiliates. This is a consolidated group figure.",
+      "evidence": [
+        {
+          "url": "https://investors.thomsonreuters.com/static-files/842c9fc0-bdf4-4b1b-9f6b-c5a14de0b3cf",
+          "title": "Thomson Reuters Second Quarter Report 2026",
+          "excerpt": "beneficially owned approximately 71% of the Company’s common shares.",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-17T19:09:43.978Z",
+          "validation": "document_available",
+          "httpStatus": 200,
+          "resolvedUrl": "https://investors.thomsonreuters.com/static-files/842c9fc0-bdf4-4b1b-9f6b-c5a14de0b3cf"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-3",
+      "from": "thomson-reuters",
+      "to": "woodbridge",
+      "relationship": "controlled_by",
+      "percentage": null,
+      "asOf": "2026-04-13",
+      "description": "The management proxy circular expressly identifies Woodbridge as the controlling shareholder.",
+      "evidence": [
+        {
+          "url": "https://investors.thomsonreuters.com/static-files/a5b697e9-2135-4c5d-82e0-15e56c238a09",
+          "title": "2026 Management Proxy Circular and Notice of Annual Meeting of Shareholders",
+          "excerpt": "Woodbridge is the principal and controlling shareholder of Thomson Reuters.",
+          "sourceType": "primary",
+          "publishedAt": "2026-04-16",
+          "accessedAt": "2026-09-17T19:09:43.978Z",
+          "validation": "document_available",
+          "httpStatus": 200,
+          "resolvedUrl": "https://investors.thomsonreuters.com/static-files/a5b697e9-2135-4c5d-82e0-15e56c238a09"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-4",
+      "from": "woodbridge",
+      "to": "thomson-investments",
+      "relationship": "parent_company",
+      "percentage": null,
+      "asOf": "2026-04-17",
+      "description": "The current Schedule 13D amendment describes Thomson Investments Limited as a holding company of Woodbridge within continuing estate and family ownership arrangements.",
+      "evidence": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1075124/000114036126015444/xslSCHEDULE_13D_X02/primary_doc.xml",
+          "title": "Thomson Reuters Schedule 13D/A, Amendment 24",
+          "excerpt": "a holding company of Woodbridge, Thomson Investments Limited",
+          "sourceType": "primary",
+          "publishedAt": "2026-04-17",
+          "accessedAt": "2026-09-17T19:09:43.978Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.sec.gov/Archives/edgar/data/1075124/000114036126015444/xslSCHEDULE_13D_X02/primary_doc.xml"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-5",
+      "from": "thomson-reuters",
+      "to": "other-shareholders",
+      "relationship": "owned_by",
+      "percentage": 29,
+      "asOf": "2026-06-30",
+      "description": "Approximate common-share remainder calculated as 100% minus the rounded 71% reported for Woodbridge and affiliates; not a separately reported exact percentage.",
+      "evidence": [
+        {
+          "url": "https://investors.thomsonreuters.com/static-files/842c9fc0-bdf4-4b1b-9f6b-c5a14de0b3cf",
+          "title": "Thomson Reuters Second Quarter Report 2026",
+          "excerpt": "approximately 71% of the Company’s common shares.",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-17T19:09:43.978Z",
+          "validation": "document_available",
+          "httpStatus": 200,
+          "resolvedUrl": "https://investors.thomsonreuters.com/static-files/842c9fc0-bdf4-4b1b-9f6b-c5a14de0b3cf"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-6",
+      "from": "thomson-reuters",
+      "to": "founders-share-company",
+      "relationship": "controlled_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "Limited protective control: special voting rights apply in specified acquisition or significant-shareholding circumstances. This is not ordinary management control or an economic ownership percentage.",
+      "evidence": [
+        {
+          "url": "https://www.thomsonreuters.com/en/about-us/trust-principles",
+          "title": "The Trust Principles",
+          "excerpt": "enhanced voting rights",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-17T19:09:43.978Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.thomsonreuters.com/en/about-us/trust-principles"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-7",
+      "from": "reuters",
+      "to": "founders-share-company",
+      "relationship": "controlled_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "The Founders Share Company’s prior consent is required for a sale or other material transaction involving the Reuters news business.",
+      "evidence": [
+        {
+          "url": "https://www.thomsonreuters.com/en/about-us/trust-principles",
+          "title": "The Trust Principles",
+          "excerpt": "any sale of, or other material transaction involving, the Reuters news business unit",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-17T19:09:43.978Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.thomsonreuters.com/en/about-us/trust-principles"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    }
+  ],
+  "gaps": [
+    "Recent-sale searches found no supported transfer of the Reuters news business. The July 2026 announced KKR transaction concerns Global Print, a separate business.",
+    "June 30, 2026 is the latest verified ownership observation used here. Subsequent share transactions or repurchases may change the rounded percentages.",
+    "Reuters is represented as the news agency and business, rather than as a particular national publishing subsidiary; the complete intermediate legal-entity structure was not verified.",
+    "The three-level limit stops the corporate chain at Thomson Investments Limited. Filings describe the 2003 TIL Settlement, its Thomson family beneficiaries and trustee arrangements beyond that point.",
+    "Family members’ individual economic interests and the composition of the public-shareholder remainder were not established.",
+    "The official Trust Principles page is undated, so dates for its protective-rights observations are null.",
+    "No Wikidata identifiers were verified."
+  ],
+  "researchedAt": "2026-09-17T19:09:43.978Z",
+  "coverage": "partial",
+  "engine": "AI web research",
+  "revision": 1,
+  "id": "34dc3dcd-6b46-4a12-b3ac-2fb5095b8add",
+  "publishedSnapshot": true
+}

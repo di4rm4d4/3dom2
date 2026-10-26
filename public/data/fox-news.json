@@ -1,0 +1,242 @@
+{
+  "query": "Fox News",
+  "kind": "auto",
+  "depth": 3,
+  "title": "Fox News ownership and voting control",
+  "rootId": "fox-news",
+  "summary": "Fox News is a United States news channel and digital news service operated by Fox News Network, LLC, a subsidiary of Fox Corporation. LGC Holdco held 38.76% of Fox Corporation’s Class B shares in its August 2026 ownership table. Lachlan Murdoch controls voting of that block through appointment rights. These are unreviewed public-source findings.",
+  "nodes": [
+    {
+      "id": "fox-news",
+      "name": "Fox News",
+      "type": "publication",
+      "description": "United States national cable news channel and associated digital news service, including Foxnews.com.",
+      "country": "United States",
+      "website": "https://www.foxnews.com/",
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "The research identifies the national Fox News service, rather than local FOX-affiliated stations.",
+      "image": null
+    },
+    {
+      "id": "fox-news-network",
+      "name": "Fox News Network, LLC",
+      "type": "publisher",
+      "description": "Delaware company providing Fox News digital services and operating the FOX News Media business.",
+      "country": "United States",
+      "website": "https://www.foxnews.com/",
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Listed among Fox Corporation’s subsidiaries in its fiscal 2026 filing.",
+      "image": null
+    },
+    {
+      "id": "fox-corporation",
+      "name": "Fox Corporation",
+      "type": "company",
+      "description": "Publicly traded United States media parent with Class A and Class B common shares.",
+      "country": "United States",
+      "website": "https://www.foxcorporation.com/",
+      "wikidataId": "Q60238941",
+      "endpoint": "continue",
+      "endpointNote": "Ownership and the principal family voting block are traced separately.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/FOX_wordmark.svg/250px-FOX_wordmark.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:FOX_wordmark.svg",
+        "artist": "Fox Corporation",
+        "license": "Public domain"
+      }
+    },
+    {
+      "id": "lgc-holdco",
+      "name": "LGC Holdco, LLC",
+      "type": "company",
+      "description": "Family holding company owning 85,372,810 Fox Class B shares and 19,000 Class A shares in the latest opened ownership table.",
+      "country": "United States",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "depth_limit",
+      "endpointNote": "Third relationship level. Fox identifies trusts benefiting Lachlan, Grace and Chloe Murdoch as its owners. Cruden 2, LLC manages its shares; further upstream edges are outside this graph’s depth limit.",
+      "image": null
+    },
+    {
+      "id": "lachlan-murdoch",
+      "name": "Lachlan K. Murdoch",
+      "type": "person",
+      "description": "Controls voting decisions for the LGC block through the right to appoint and replace the relevant managing director of Cruden 2.",
+      "country": null,
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "individual",
+      "endpointNote": "Individual stopping point. Voting authority does not establish personal economic ownership of the entire family block.",
+      "image": null
+    },
+    {
+      "id": "fox-other-shareholders",
+      "name": "Other Fox Corporation shareholders",
+      "type": "aggregate",
+      "description": "Holders outside LGC Holdco, including institutional funds, other investors and individual holdings. Investment managers’ reported beneficial ownership is not treated as ownership of their clients’ assets.",
+      "country": null,
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "dispersed_shareholders",
+      "endpointNote": "Aggregate remainder; underlying investors have not been individually identified. No single economic ownership percentage is assigned across the two share classes.",
+      "image": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "from": "fox-news",
+      "to": "fox-news-network",
+      "relationship": "published_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "The current terms identify the company providing Fox News digital services.",
+      "evidence": [
+        {
+          "url": "https://www.foxnews.com/terms-of-use",
+          "title": "New Terms of Use | Fox News",
+          "excerpt": "The Fox Services are provided by Fox News Network, LLC",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-17T19:30:02.626Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.foxnews.com/terms-of-use"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-2",
+      "from": "fox-news-network",
+      "to": "fox-corporation",
+      "relationship": "parent_company",
+      "percentage": null,
+      "asOf": "2026-06-30",
+      "description": "Fox Corporation lists Fox News Network, LLC as a subsidiary. The exhibit does not specify its ownership percentage or intermediate holding entities.",
+      "evidence": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1754301/000162828026053960/foxa-20260630x10kex21.htm",
+          "title": "Fox Corporation fiscal 2026 Form 10-K, Exhibit 21: Subsidiaries",
+          "excerpt": "SUBSIDIARIES OF FOX CORPORATION",
+          "sourceType": "primary",
+          "publishedAt": "2026-08-06",
+          "accessedAt": "2026-09-17T19:30:02.627Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.sec.gov/Archives/edgar/data/1754301/000162828026053960/foxa-20260630x10kex21.htm"
+        },
+        {
+          "url": "https://www.foxnews.com/whats-changed",
+          "title": "What’s Changed | Fox News",
+          "excerpt": "Fox News Network, LLC has become part of the newly formed Fox Corporation.",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-17T19:30:02.627Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.foxnews.com/whats-changed"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-3",
+      "from": "fox-corporation",
+      "to": "lgc-holdco",
+      "relationship": "owned_by",
+      "percentage": 38.76,
+      "asOf": "2026-08-17",
+      "description": "Percentage is of Class B common stock only, not total equity. The table also reports 19,000 Class A shares. Its LGC Class B holdings disclosure refers to the June 16, 2026 Schedule 13D amendment.",
+      "evidence": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1754301/000119312526377686/d94663d424b3.htm",
+          "title": "Fox Corporation and Roku joint proxy statement/prospectus",
+          "excerpt": "LGC Holdco, LLC",
+          "sourceType": "primary",
+          "publishedAt": "2026-09-01",
+          "accessedAt": "2026-09-17T19:30:02.627Z",
+          "validation": "unavailable"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-4",
+      "from": "fox-corporation",
+      "to": "lachlan-murdoch",
+      "relationship": "controlled_by",
+      "percentage": null,
+      "asOf": "2026-06-16",
+      "description": "Indirect voting control over the LGC Class B block, subject to limited exceptions. Lachlan appoints and can replace the Cruden 2 managing director who decides how those shares are voted or disposed of. This is not a majority equity ownership claim.",
+      "evidence": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1754301/000119312526272917/xslSCHEDULE_13D_X02/primary_doc.xml",
+          "title": "Fox Corporation Schedule 13D Amendment No. 1",
+          "excerpt": "appointed, and may be replaced, by Mr. Murdoch",
+          "sourceType": "primary",
+          "publishedAt": "2026-06-16",
+          "accessedAt": "2026-09-17T19:30:02.627Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.sec.gov/Archives/edgar/data/1754301/000119312526272917/xslSCHEDULE_13D_X02/primary_doc.xml"
+        },
+        {
+          "url": "https://www.foxcorporation.com/news/corp-press-releases/2025/fox-corporation-announces-resolution-of-murdoch-family-trust-matter/",
+          "title": "Fox Corporation Announces Resolution of Murdoch Family Trust Matter",
+          "excerpt": "voting control",
+          "sourceType": "primary",
+          "publishedAt": "2025-09-08",
+          "accessedAt": "2026-09-17T19:30:02.627Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.foxcorporation.com/news/corp-press-releases/2025/fox-corporation-announces-resolution-of-murdoch-family-trust-matter/"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-5",
+      "from": "fox-corporation",
+      "to": "fox-other-shareholders",
+      "relationship": "owned_by",
+      "percentage": null,
+      "asOf": "2026-08-17",
+      "description": "The ownership table establishes additional holdings outside LGC. It reports State Street beneficial holdings of 8.73% of Class A and 6.36% of Class B, and BlackRock holdings of 8.49% and 5.19%, respectively. These regulatory disclosures include investment or voting authority and do not establish that those managers economically own the assets.",
+      "evidence": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1754301/000119312526377686/d94663d424b3.htm",
+          "title": "Fox Corporation and Roku joint proxy statement/prospectus",
+          "excerpt": "State Street Corporation",
+          "sourceType": "primary",
+          "publishedAt": "2026-09-01",
+          "accessedAt": "2026-09-17T19:30:02.627Z",
+          "validation": "unavailable"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    }
+  ],
+  "gaps": [
+    "The graph stops after three relationship levels. LGC’s family trusts and Cruden 2 are described but not expanded into additional upstream nodes.",
+    "The subsidiary exhibit establishes Fox Corporation as a parent but does not establish the immediate legal holding chain or a precise equity percentage.",
+    "Institutional holdings in the August 2026 table rely on filings with different observation dates: State Street Class A June 30, 2026 and Class B September 30, 2025; BlackRock Class A March 31, 2025 and Class B March 31, 2026.",
+    "The September 2025 family settlement replaced the older Murdoch Family Trust arrangement. Its initially projected 36.2% Class B holding is superseded here by the later 38.76% table.",
+    "Recent transaction searches found Fox’s proposed Roku acquisition. The opened September 1, 2026 prospectus schedules shareholder votes for October 14, 2026; prospective post-merger ownership is excluded.",
+    "No completed sale of Fox News was identified in the sources reviewed. Current holdings after the latest disclosed observation dates remain unverified.",
+    "Wikidata identifiers were not verified during this run."
+  ],
+  "researchedAt": "2026-09-17T19:30:02.627Z",
+  "coverage": "partial",
+  "engine": "AI web research",
+  "revision": 1,
+  "id": "11443399-065a-4b50-8893-4c14004a3bc1",
+  "publishedSnapshot": true
+}

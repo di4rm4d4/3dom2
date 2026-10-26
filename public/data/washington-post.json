@@ -1,0 +1,179 @@
+{
+  "query": "The Washington Post",
+  "kind": "news",
+  "depth": 3,
+  "title": "The Washington Post ownership and control",
+  "rootId": "the-washington-post",
+  "summary": "The Washington Post is a United States newspaper and digital news publication based in Washington, D.C. Its publisher, WP Company LLC, is wholly owned by Nash Holdings LLC, which is owned by Jeff Bezos. The Post’s current official disclosure identifies Bezos as its owner; September 2026 reporting also documents his leadership appointment authority.",
+  "nodes": [
+    {
+      "id": "the-washington-post",
+      "name": "The Washington Post",
+      "type": "publication",
+      "description": "American newspaper and digital news publication covering national, international and Washington-area affairs.",
+      "country": "United States",
+      "website": "https://www.washingtonpost.com/",
+      "wikidataId": "Q166032",
+      "endpoint": "continue",
+      "endpointNote": "Publication traced through its legal publisher to its holding company and ultimate individual owner.",
+      "image": null
+    },
+    {
+      "id": "wp-company-llc",
+      "name": "WP Company LLC",
+      "type": "publisher",
+      "description": "Privately held legal entity doing business as The Washington Post.",
+      "country": "United States",
+      "website": "https://www.washingtonpost.com/",
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "A court corporate disclosure identifies Nash Holdings LLC as its sole parent.",
+      "image": null
+    },
+    {
+      "id": "nash-holdings-llc",
+      "name": "Nash Holdings LLC",
+      "type": "company",
+      "description": "Private holding company owning WP Company LLC.",
+      "country": "United States",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Ownership traced to Jeffrey P. Bezos in a court corporate disclosure.",
+      "image": null
+    },
+    {
+      "id": "jeff-bezos",
+      "name": "Jeffrey P. Bezos",
+      "type": "person",
+      "description": "Jeff Bezos, ultimate individual owner of The Washington Post.",
+      "country": "United States",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "individual",
+      "endpointNote": "Natural-person stopping point. The publication’s official About page confirms his ownership.",
+      "image": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "from": "the-washington-post",
+      "to": "wp-company-llc",
+      "relationship": "published_by",
+      "percentage": null,
+      "asOf": "2023-10-16",
+      "description": "The terms identify WP Company LLC as the publication’s service provider.",
+      "evidence": [
+        {
+          "url": "https://www.washingtonpost.com/terms-of-service/",
+          "title": "Terms of Service - The Washington Post",
+          "excerpt": "WP Company LLC (“The Washington Post,” “we” or “us”)",
+          "sourceType": "primary",
+          "publishedAt": "2023-10-16",
+          "accessedAt": "2026-09-18T10:32:47.256Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.washingtonpost.com/terms-of-service/"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-2",
+      "from": "wp-company-llc",
+      "to": "nash-holdings-llc",
+      "relationship": "owned_by",
+      "percentage": 100,
+      "asOf": "2025-10-06",
+      "description": "The corporate disclosure expressly identifies WP Company LLC as a wholly owned subsidiary of Nash Holdings LLC.",
+      "evidence": [
+        {
+          "url": "https://whca.press/wp-content/uploads/2025/10/2025.10.06-AMICUS-FOR-APPELLEE-BRIEF-2139056-filed-by-Reporters-Committee-for.pdf",
+          "title": "Reporters Committee amicus brief, Case 25-5109: Corporate Disclosure Statement",
+          "excerpt": "a wholly-owned subsidiary of Nash Holdings LLC",
+          "sourceType": "primary",
+          "publishedAt": "2025-10-06",
+          "accessedAt": "2026-09-18T10:32:47.256Z",
+          "validation": "document_available",
+          "httpStatus": 200,
+          "resolvedUrl": "https://whca.press/wp-content/uploads/2025/10/2025.10.06-AMICUS-FOR-APPELLEE-BRIEF-2139056-filed-by-Reporters-Committee-for.pdf"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-3",
+      "from": "nash-holdings-llc",
+      "to": "jeff-bezos",
+      "relationship": "owned_by",
+      "percentage": null,
+      "asOf": "2025-10-06",
+      "description": "The filing identifies Bezos as Nash Holdings’ owner without specifying his percentage. The current official About page corroborates his ultimate ownership of the publication.",
+      "evidence": [
+        {
+          "url": "https://whca.press/wp-content/uploads/2025/10/2025.10.06-AMICUS-FOR-APPELLEE-BRIEF-2139056-filed-by-Reporters-Committee-for.pdf",
+          "title": "Reporters Committee amicus brief, Case 25-5109: Corporate Disclosure Statement",
+          "excerpt": "a holding company owned by Jeffrey P. Bezos",
+          "sourceType": "primary",
+          "publishedAt": "2025-10-06",
+          "accessedAt": "2026-09-18T10:32:47.256Z",
+          "validation": "document_available",
+          "httpStatus": 200,
+          "resolvedUrl": "https://whca.press/wp-content/uploads/2025/10/2025.10.06-AMICUS-FOR-APPELLEE-BRIEF-2139056-filed-by-Reporters-Committee-for.pdf"
+        },
+        {
+          "url": "https://company.washingtonpost.com/",
+          "title": "About - The Washington Post",
+          "excerpt": "The Washington Post is owned by Jeff Bezos",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:32:47.256Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://company.washingtonpost.com/"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-4",
+      "from": "the-washington-post",
+      "to": "jeff-bezos",
+      "relationship": "appointment_rights",
+      "percentage": null,
+      "asOf": "2026-09-09",
+      "description": "Bezos appointed D’Onofrio publisher and CEO.",
+      "evidence": [
+        {
+          "url": "https://www.washingtonpost.com/business/2026/09/09/interim-washington-post-publisher-jeff-donofrio-serve-permanent-capacity/",
+          "title": "Post formally names Jeff D’Onofrio as publisher and CEO",
+          "excerpt": "Jeff Bezos, the owner of The Post, announced the decision in an email to staff.",
+          "sourceType": "primary",
+          "publishedAt": "2026-09-09",
+          "accessedAt": "2026-09-18T10:32:47.256Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.washingtonpost.com/business/2026/09/09/interim-washington-post-publisher-jeff-donofrio-serve-permanent-capacity/"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    }
+  ],
+  "gaps": [
+    "Searches for recent sales found no completed ownership change. The latest opened dated ownership confirmation is September 9, 2026; the detailed holding-company disclosure is dated October 6, 2025.",
+    "Bezos’s precise equity percentage in Nash Holdings and formal voting provisions were not established by the opened primary sources.",
+    "Appointment authority is supported by an actual appointment announcement; governing documents specifying its legal scope were not obtained.",
+    "No current company-register extract or verified Wikidata identifiers were obtained."
+  ],
+  "researchedAt": "2026-09-18T10:32:47.256Z",
+  "coverage": "partial",
+  "engine": "AI web research",
+  "revision": 1,
+  "id": "a0a95da1-6570-4c9f-bb39-0623cd66a87a",
+  "publishedSnapshot": true
+}

@@ -1,0 +1,114 @@
+{
+  "query": "BBC",
+  "kind": "news",
+  "depth": 3,
+  "title": "BBC ownership and governance",
+  "rootId": "bbc",
+  "summary": "The BBC is the United Kingdom’s public broadcasting corporation, constituted by Royal Charter. Its Board governs the corporation; state authorities hold appointment rights over the Chair and four nation members. These powers do not establish private equity ownership or unrestricted government editorial control.",
+  "nodes": [
+    {
+      "id": "bbc",
+      "name": "BBC — British Broadcasting Corporation",
+      "type": "publisher",
+      "description": "United Kingdom public-service broadcaster providing news, television, radio and digital services domestically and internationally. Constituted as a public corporation under Royal Charter.",
+      "country": "United Kingdom",
+      "website": "https://www.bbc.co.uk/",
+      "wikidataId": "Q9531",
+      "endpoint": "continue",
+      "endpointNote": "The graph follows corporate governance and appointment powers. No equity parent was established.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/BBC_Logo_2021.svg/250px-BBC_Logo_2021.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:BBC_Logo_2021.svg",
+        "artist": "British Broadcasting Corporation (BBC)",
+        "license": "Public domain"
+      }
+    },
+    {
+      "id": "bbc-board",
+      "name": "BBC Board",
+      "type": "aggregate",
+      "description": "The corporation’s collective governing body, comprising executive and non-executive members. This is an internal governance body, not a shareholder aggregate.",
+      "country": "United Kingdom",
+      "website": "https://www.bbc.co.uk/aboutthebbc/whoweare/bbcboard",
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "External appointment powers are followed to the state. The Board appoints the other five non-executive members and four executive members through its nomination procedures.",
+      "image": null
+    },
+    {
+      "id": "united-kingdom-state",
+      "name": "United Kingdom state — Crown in Council and relevant ministers",
+      "type": "state",
+      "description": "State appointment authority acting through Orders in Council, ministerial procedures and the specified consent rights of devolved administrations.",
+      "country": "United Kingdom",
+      "website": "https://www.gov.uk/",
+      "wikidataId": null,
+      "endpoint": "state",
+      "endpointNote": "State stopping point. The monarch and ministers exercise institutional powers; they are not identified as personal owners.",
+      "image": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "from": "bbc",
+      "to": "bbc-board",
+      "relationship": "managed_by",
+      "percentage": null,
+      "asOf": "2025-12-16",
+      "description": "Charter articles 19–20 place collective governance, strategy, creative remit and budget responsibilities with the Board. Article 3 protects editorial and managerial independence. The observation date is the official Charter page’s update date.",
+      "evidence": [
+        {
+          "url": "https://www.gov.uk/government/publications/bbc-charter-and-framework-agreement/bbc-charter",
+          "title": "BBC Charter",
+          "excerpt": "There shall be a Board of the BBC",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:27:17.622Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.gov.uk/government/publications/bbc-charter-and-framework-agreement/bbc-charter"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-2",
+      "from": "bbc-board",
+      "to": "united-kingdom-state",
+      "relationship": "appointment_rights",
+      "percentage": null,
+      "asOf": "2025-12-16",
+      "description": "Charter articles 22–23 require appointment of the Chair and four nation members by Order in Council: five of fourteen prescribed Board positions. Selection involves public appointment procedures. Appointments for Scotland, Wales and Northern Ireland require agreement from their respective devolved authorities. These limited appointment rights are separate from equity ownership and day-to-day editorial authority.",
+      "evidence": [
+        {
+          "url": "https://www.gov.uk/government/publications/bbc-charter-and-framework-agreement/bbc-charter",
+          "title": "BBC Charter",
+          "excerpt": "The Nation Members must be appointed by Order in Council.",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:27:17.622Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.gov.uk/government/publications/bbc-charter-and-framework-agreement/bbc-charter"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    }
+  ],
+  "gaps": [
+    "BBC is interpreted as the British Broadcasting Corporation as a whole, including its news operations. No particular BBC News channel, website edition or commercial subsidiary was specified.",
+    "Recent-sale and governance searches found no substantiated transfer of the corporation. The current Charter runs through 31 December 2027; the government’s June 2026 parliamentary answer described the next Charter’s policy decisions as forthcoming: https://questions-statements.parliament.uk/written-questions/detail/2026-06-09/8478.",
+    "The official publication page confirms a 2025–26 annual report published on 14 July 2026, but its substantive governance text was not successfully opened. BBC-hosted About and Board pages also failed to load. The graph therefore relies on the opened Charter and government review materials rather than claiming annual-report verification: https://www.gov.uk/government/publications/bbc-group-annual-report-and-accounts-for-2025-to-2026.",
+    "Public-corporation status is not represented as a percentage equity holding. No private shareholders or corporate parent were established by the opened sources.",
+    "Findings are unreviewed and describe documented institutional powers, not an assessment of practical editorial independence."
+  ],
+  "researchedAt": "2026-09-18T10:27:17.622Z",
+  "coverage": "partial",
+  "engine": "AI web research",
+  "revision": 1,
+  "id": "7348f62d-bde7-4109-9b0b-f8cbdf59938e",
+  "publishedSnapshot": true
+}

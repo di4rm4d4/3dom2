@@ -1,0 +1,76 @@
+:root {
+  color-scheme: dark;
+  font-family: monospace;
+  color: #eee;
+  background: #000;
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; }
+main { min-height: 100dvh; }
+body:not(.has-map) main { display: grid; place-content: center; }
+
+header { padding: 28px 20px; text-align: center; }
+h1 { margin: 0 0 20px; font-size: 26px; font-weight: normal; }
+h1 a { color: inherit; text-decoration: none; }
+form { display: flex; gap: 8px; margin: auto; max-width: 380px; }
+input, button { font: inherit; border-radius: 0; }
+input { min-width: 0; flex: 1; padding: 7px; border: 1px solid #777; background: #000; color: #fff; }
+input::placeholder { color: #999; }
+button { padding: 5px 9px; border: 1px solid #777; background: #000; color: #eee; cursor: pointer; }
+button:hover { border-color: #fff; }
+button:disabled { opacity: .5; cursor: default; }
+a { color: inherit; text-underline-offset: 3px; }
+:focus-visible { outline: 1px solid #fff; outline-offset: 4px; }
+#progress, #error { font-size: 12px; max-width: 460px; margin: 16px auto 0; line-height: 1.5; }
+#progress button { border: 0; text-decoration: underline; }
+#funding-note, #saved-maps { font-size: 12px; max-width: 460px; margin: 16px auto 0; line-height: 1.5; }
+#funding-note { color: #aaa; }
+#saved-maps summary { cursor: pointer; }
+#publication-list { padding: 0; list-style: none; columns: 2; text-align: left; }
+#publication-list li { margin: 0 0 8px; break-inside: avoid; }
+
+#workspace { position: relative; }
+#map { display: block; width: 100%; height: calc(100dvh - var(--header-height, 240px)); min-height: 400px; touch-action: none; cursor: grab; }
+#map.dragging { cursor: grabbing; }
+.map-controls { position: absolute; left: 20px; bottom: 20px; display: flex; gap: 5px; }
+#graph-empty { position: absolute; bottom: 75px; width: 100%; text-align: center; font-size: 12px; }
+
+.node, .edge { cursor: pointer; }
+.node .shell { fill: #000; stroke: #eee; stroke-width: 1; }
+.node .root-ring { fill: none; stroke: #666; stroke-width: 1; }
+.node text { fill: #eee; font-size: 16px; text-anchor: middle; pointer-events: none; }
+.node .initials { font-size: 19px; }
+.node image { filter: grayscale(1); pointer-events: none; }
+.node:hover .shell, .node:focus-visible .shell { stroke-width: 2; }
+.node:focus, .edge:focus { outline: none; }
+.edge .edge-visible { fill: none; stroke: #aaa; stroke-width: 1; marker-end: url(#arrow); color: #aaa; }
+.edge.pending .edge-visible { stroke-dasharray: 4 5; }
+.edge.rejected { opacity: .35; }
+.edge .hit { fill: none; stroke: transparent; stroke-width: 22; }
+.edge:hover .edge-visible, .edge:focus-visible .edge-visible { stroke: #fff; stroke-width: 2; }
+.edge text { fill: #bbb; font-size: 12px; text-anchor: middle; paint-order: stroke; stroke: #000; stroke-width: 5px; }
+
+#drawer { position: fixed; right: 20px; bottom: 20px; width: 340px; max-width: calc(100% - 40px); max-height: 70dvh; overflow: auto; padding: 20px; border: 1px solid #777; background: #000; }
+#drawer-close { float: right; padding: 0 3px; border: 0; font-size: 22px; }
+#drawer h2 { margin: 0 25px 16px 0; font-size: 18px; font-weight: normal; overflow-wrap: anywhere; }
+#drawer p, #drawer li, #drawer summary, #drawer a, #drawer button { font-size: 12px; line-height: 1.6; }
+#drawer p { margin: 12px 0; }
+#drawer small { color: #aaa; font-size: 11px; }
+#drawer details { margin-top: 18px; }
+#drawer summary { cursor: pointer; }
+#drawer ul { padding-left: 18px; }
+#drawer li { margin: 8px 0; }
+#drawer blockquote { margin: 10px 0; color: #bbb; font-size: 12px; }
+.connections { display: grid; gap: 9px; margin-top: 18px; }
+.connections button { text-align: left; padding: 0; border: 0; text-decoration: underline; text-underline-offset: 3px; }
+.source { margin: 16px 0; overflow-wrap: anywhere; }
+.review-actions { display: flex; gap: 6px; margin-top: 10px; }
+.map-actions { display: flex; gap: 6px; margin-top: 16px; }
+
+@media (max-width: 600px) {
+  header { padding: 24px 20px; }
+  h1 { font-size: 23px; }
+  #drawer { bottom: 12px; right: 12px; max-width: calc(100% - 24px); max-height: 60dvh; }
+}

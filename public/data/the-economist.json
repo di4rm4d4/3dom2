@@ -1,0 +1,504 @@
+{
+  "query": "The Economist",
+  "kind": "news",
+  "depth": 3,
+  "title": "The Economist: ownership and control",
+  "rootId": "the-economist",
+  "summary": "The Economist is a British international news publication. Exor holds 43.4% of its publisher. Stephen Smith and his investment interests acquired a combined 26.95% in April 2026. Shareholder voting is capped, while special shareholders and trustees hold separate appointment rights.",
+  "nodes": [
+    {
+      "id": "the-economist",
+      "name": "The Economist",
+      "type": "publication",
+      "description": "London-based international newspaper, founded in 1843, published weekly in magazine format and daily digitally.",
+      "country": "United Kingdom",
+      "website": "https://www.economist.com/",
+      "wikidataId": "Q180089",
+      "endpoint": "continue",
+      "endpointNote": "Publisher and governance relationships traced below.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/The_Economist_Logo.svg/250px-The_Economist_Logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:The_Economist_Logo.svg",
+        "artist": "Unknown authorUnknown author",
+        "license": "Public domain"
+      }
+    },
+    {
+      "id": "economist-newspaper-limited",
+      "name": "The Economist Newspaper Limited (The Economist Group)",
+      "type": "publisher",
+      "description": "UK company 00236383, the parent company reporting as The Economist Group.",
+      "country": "United Kingdom",
+      "website": "https://www.economistgroup.com/",
+      "wikidataId": "Q474153",
+      "endpoint": "continue",
+      "endpointNote": "Equity ownership and appointment rights are recorded separately.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/TheEconomistLogo.svg/250px-TheEconomistLogo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:TheEconomistLogo.svg",
+        "artist": "The Economist",
+        "license": "Public domain"
+      }
+    },
+    {
+      "id": "exor",
+      "name": "Exor N.V.",
+      "type": "company",
+      "description": "Dutch publicly listed investment company and largest Economist shareholder.",
+      "country": "Netherlands",
+      "website": "https://www.exor.com/",
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Traced to its controlling shareholder and an aggregate of other investors.",
+      "image": null
+    },
+    {
+      "id": "sfc-international-holdings",
+      "name": "SFC International Holdings Limited",
+      "type": "company",
+      "description": "UK investment company 17045665; registered significant shareholder in the publisher.",
+      "country": "United Kingdom",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Indirect control by Stephen Smith is documented; intermediate corporate ownership was not established.",
+      "image": null
+    },
+    {
+      "id": "stephen-smith",
+      "name": "Stephen John Richard Smith",
+      "type": "person",
+      "description": "Canadian investor participating in the April 2026 acquisition personally and through investment interests.",
+      "country": "Canada",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "individual",
+      "endpointNote": "Natural-person stopping point. His individual Economist percentage is undisclosed in the opened sources.",
+      "image": null
+    },
+    {
+      "id": "economist-other-shareholders",
+      "name": "Other Economist shareholders",
+      "type": "aggregate",
+      "description": "Other family, employee, former employee and unrelated shareholders.",
+      "country": null,
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "dispersed_shareholders",
+      "endpointNote": "Individual holdings and a reconciled remainder percentage were not established.",
+      "image": null
+    },
+    {
+      "id": "economist-a-shareholders",
+      "name": "Economist A special shareholders",
+      "type": "aggregate",
+      "description": "Share class with collective director appointment rights; overlaps the equity owners elsewhere in this graph.",
+      "country": null,
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "dispersed_shareholders",
+      "endpointNote": "More than 100 holders; this governance grouping is not an additional equity block.",
+      "image": null
+    },
+    {
+      "id": "economist-trustees",
+      "name": "The Economist trustees",
+      "type": "trust",
+      "description": "Trust-share holders: Virginia Bottomley, Alison Carnwath, Tim Clark and Gus O’Donnell.",
+      "country": "United Kingdom",
+      "website": "https://www.economistgroup.com/esg",
+      "wikidataId": null,
+      "endpoint": "unresolved",
+      "endpointNote": "Collective governance endpoint. Remaining trustees appoint replacements. Trust shares confer specified safeguards without dividend or other economic rights.",
+      "image": null
+    },
+    {
+      "id": "giovanni-agnelli-bv",
+      "name": "Giovanni Agnelli B.V.",
+      "type": "company",
+      "description": "Dutch private company holding the controlling interest in Exor.",
+      "country": "Netherlands",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "depth_limit",
+      "endpointNote": "Third relationship level. Exor identifies its owners as descendants of Giovanni Agnelli; individual holdings were not traced.",
+      "image": null
+    },
+    {
+      "id": "exor-other-shareholders",
+      "name": "Other Exor shareholders",
+      "type": "aggregate",
+      "description": "Investors other than Giovanni Agnelli B.V., excluding Exor treasury shares.",
+      "country": null,
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "dispersed_shareholders",
+      "endpointNote": "Underlying investors were not individually resolved. Baillie Gifford's reported position is not treated as ownership of its clients' assets.",
+      "image": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "from": "the-economist",
+      "to": "economist-newspaper-limited",
+      "relationship": "published_by",
+      "percentage": null,
+      "asOf": "2026-04-24",
+      "description": "The Group identifies itself as the publication's publisher; its annual report identifies The Economist Newspaper Limited as the reporting parent.",
+      "evidence": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/stephen-smith-and-smith-financial-corporation-acquire-minority-stake-in-the-economist-group-302752763.html",
+          "title": "Stephen Smith and Smith Financial Corporation acquire minority stake in The Economist Group",
+          "excerpt": "best known for publishing The Economist",
+          "sourceType": "primary",
+          "publishedAt": "2026-04-24",
+          "accessedAt": "2026-09-18T10:31:18.806Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.prnewswire.com/news-releases/stephen-smith-and-smith-financial-corporation-acquire-minority-stake-in-the-economist-group-302752763.html"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-2",
+      "from": "economist-newspaper-limited",
+      "to": "exor",
+      "relationship": "owned_by",
+      "percentage": 43.4,
+      "asOf": null,
+      "description": "Owns ordinary shares and all B special shares. The ownership page excludes trust shares from its percentage denominator; the 2026 annual report corroborates 43.4%.",
+      "evidence": [
+        {
+          "url": "https://www.economistgroup.com/esg",
+          "title": "The Economist Group — Environmental, Social and Governance",
+          "excerpt": "43.4% of the total share capital",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:31:18.806Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.economistgroup.com/esg"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-3",
+      "from": "economist-newspaper-limited",
+      "to": "sfc-international-holdings",
+      "relationship": "owned_by",
+      "percentage": null,
+      "asOf": "2026-04-20",
+      "description": "Companies House records ownership above 25% and no more than 50%. The Smith acquisition totals 26.95%, but the vehicle's precise allocation is not disclosed.",
+      "evidence": [
+        {
+          "url": "https://find-and-update.company-information.service.gov.uk/company/00236383/persons-with-significant-control",
+          "title": "ECONOMIST NEWSPAPER LIMITED(THE) — Persons with significant control",
+          "excerpt": "Ownership of shares – More than 25% but not more than 50%",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:31:18.806Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://find-and-update.company-information.service.gov.uk/company/00236383/persons-with-significant-control"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-4",
+      "from": "economist-newspaper-limited",
+      "to": "stephen-smith",
+      "relationship": "owned_by",
+      "percentage": null,
+      "asOf": "2026-04-23",
+      "description": "Personal participant in the completed acquisition. His holding and the related investment interests together account for 26.95%; no separate percentage is assigned.",
+      "evidence": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/stephen-smith-and-smith-financial-corporation-acquire-minority-stake-in-the-economist-group-302752763.html",
+          "title": "Stephen Smith and Smith Financial Corporation acquire minority stake in The Economist Group",
+          "excerpt": "together yesterday acquired a 26.9% shareholding",
+          "sourceType": "primary",
+          "publishedAt": "2026-04-24",
+          "accessedAt": "2026-09-18T10:31:18.806Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.prnewswire.com/news-releases/stephen-smith-and-smith-financial-corporation-acquire-minority-stake-in-the-economist-group-302752763.html"
+        },
+        {
+          "url": "https://www.economistgroup.com/pdfs/reports/TEG_Annual_Report_2026.pdf",
+          "title": "The Economist Group annual report and accounts 2026",
+          "excerpt": "26.95% of the company’s issued share capital",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:31:18.806Z",
+          "validation": "document_available",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.economistgroup.com/pdfs/reports/TEG_Annual_Report_2026.pdf"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-5",
+      "from": "sfc-international-holdings",
+      "to": "stephen-smith",
+      "relationship": "controlled_by",
+      "percentage": null,
+      "asOf": "2026-03-11",
+      "description": "The Austrian merger notification explicitly identifies indirect control by Smith. Intermediate entities are not specified.",
+      "evidence": [
+        {
+          "url": "https://www.bwb.gv.at/en/merger-control/2026/7318",
+          "title": "BWB/Z-7261 — SFC International Holdings Limited; Stephen John Richard Smith; The Economist Newspaper Limited",
+          "excerpt": "(indirectly) controlled by Stephen John Richard Smith",
+          "sourceType": "primary",
+          "publishedAt": "2026-03-12",
+          "accessedAt": "2026-09-18T10:31:18.806Z",
+          "validation": "unavailable",
+          "httpStatus": 307
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-6",
+      "from": "economist-newspaper-limited",
+      "to": "economist-other-shareholders",
+      "relationship": "owned_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "Other private shareholders are aggregated; no exact residual percentage is asserted.",
+      "evidence": [
+        {
+          "url": "https://www.economistgroup.com/esg",
+          "title": "The Economist Group — Environmental, Social and Governance",
+          "excerpt": "employees, past employees, long-standing family holders",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:31:18.806Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.economistgroup.com/esg"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-7",
+      "from": "economist-newspaper-limited",
+      "to": "exor",
+      "relationship": "appointment_rights",
+      "percentage": null,
+      "asOf": null,
+      "description": "B special shares permit appointment of six of thirteen available board seats. No shareholder may exercise more than 20% of votes at a general meeting.",
+      "evidence": [
+        {
+          "url": "https://www.economistgroup.com/esg",
+          "title": "The Economist Group — Environmental, Social and Governance",
+          "excerpt": "six",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:31:18.806Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.economistgroup.com/esg"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-8",
+      "from": "economist-newspaper-limited",
+      "to": "economist-a-shareholders",
+      "relationship": "appointment_rights",
+      "percentage": null,
+      "asOf": null,
+      "description": "A special shareholders collectively may appoint seven of thirteen available board seats.",
+      "evidence": [
+        {
+          "url": "https://www.economistgroup.com/esg",
+          "title": "The Economist Group — Environmental, Social and Governance",
+          "excerpt": "seven",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:31:18.806Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.economistgroup.com/esg"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-9",
+      "from": "the-economist",
+      "to": "economist-trustees",
+      "relationship": "appointment_rights",
+      "percentage": null,
+      "asOf": null,
+      "description": "The trustees appoint the editor-in-chief following a board proposal.",
+      "evidence": [
+        {
+          "url": "https://www.economistgroup.com/about-us",
+          "title": "The Economist Group — About us",
+          "excerpt": "The editor is appointed by trustees",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:31:18.806Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.economistgroup.com/about-us"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-10",
+      "from": "economist-newspaper-limited",
+      "to": "economist-trustees",
+      "relationship": "appointment_rights",
+      "percentage": null,
+      "asOf": null,
+      "description": "Trustees must approve appointment of the company chair.",
+      "evidence": [
+        {
+          "url": "https://www.economistgroup.com/esg",
+          "title": "The Economist Group — Environmental, Social and Governance",
+          "excerpt": "approval of the trustees",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:31:18.806Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.economistgroup.com/esg"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-11",
+      "from": "economist-newspaper-limited",
+      "to": "economist-trustees",
+      "relationship": "controlled_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "Limited reserved consent rights cover special-share transfers and changes to fundamental constitutional provisions; this is not general operational control.",
+      "evidence": [
+        {
+          "url": "https://www.economistgroup.com/pdfs/reports/TEG_Annual_Report_2026.pdf",
+          "title": "The Economist Group annual report and accounts 2026",
+          "excerpt": "Approve transfers of “A” special and “B” special shares",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:31:18.806Z",
+          "validation": "document_available",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.economistgroup.com/pdfs/reports/TEG_Annual_Report_2026.pdf"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-12",
+      "from": "exor",
+      "to": "giovanni-agnelli-bv",
+      "relationship": "owned_by",
+      "percentage": 54.94,
+      "asOf": "2025-12-31",
+      "description": "Economic rights measured against Exor's issued share capital.",
+      "evidence": [
+        {
+          "url": "https://www.exor.com/pages/investors-media/shareholders-corner/ownership-structure",
+          "title": "Exor — Ownership structure",
+          "excerpt": "54.94% of the economic rights",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:31:18.806Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.exor.com/pages/investors-media/shareholders-corner/ownership-structure"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-13",
+      "from": "exor",
+      "to": "giovanni-agnelli-bv",
+      "relationship": "controlled_by",
+      "percentage": 83.97,
+      "asOf": "2025-12-31",
+      "description": "Voting rights on issued capital, including special voting shares. This percentage describes Exor voting control.",
+      "evidence": [
+        {
+          "url": "https://www.exor.com/pages/investors-media/shareholders-corner/ownership-structure",
+          "title": "Exor — Ownership structure",
+          "excerpt": "83.97%% of the voting rights",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:31:18.806Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.exor.com/pages/investors-media/shareholders-corner/ownership-structure"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-14",
+      "from": "exor",
+      "to": "exor-other-shareholders",
+      "relationship": "owned_by",
+      "percentage": null,
+      "asOf": "2025-12-31",
+      "description": "Aggregate outside investors. Exor also reports treasury shares; no residual percentage is assigned to avoid mixing denominators or attributing managed assets to fund managers.",
+      "evidence": [
+        {
+          "url": "https://www.exor.com/pages/investors-media/shareholders-corner/ownership-structure",
+          "title": "Exor — Ownership structure",
+          "excerpt": "Baillie Gifford & Co. and Giovanni Agnelli B.V.",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:31:18.806Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.exor.com/pages/investors-media/shareholders-corner/ownership-structure"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    }
+  ],
+  "gaps": [
+    "Research cutoff: 2026-09-18. Findings are unreviewed; undated ownership pages have null observation dates.",
+    "The Smith acquisition is reported as 26.9% in the completion release and 26.95% in the annual report. The split between Stephen Smith personally and SFC International Holdings Limited was not established.",
+    "Companies House dates the new significant-shareholder entry to 2026-04-20; the publisher states completion occurred on 2026-04-23. Stephen Smith's ceased personal PSC entry does not establish that he ceased holding a smaller personal stake.",
+    "The acquisition announcement names Smith Financial Corporation, whereas the register identifies SFC International Holdings Limited. The latter's PSC page could not be opened. Their precise intermediate equity relationship is therefore omitted; the Austrian regulator directly supports Smith's indirect control.",
+    "Exor's opened ownership disclosure is dated 2025-12-31. Searches for subsequent ownership changes did not establish a newer controlling-shareholder observation.",
+    "Other Economist holdings, treasury shares and share-class denominators were not fully reconciled. The graph does not allocate an inferred residual percentage.",
+    "The Economist Group and its reporting parent The Economist Newspaper Limited are represented together to avoid inventing a parent-subsidiary layer. Giovanni Agnelli B.V. reaches the three-level tracing limit.",
+    "Trustees are represented collectively. Their reserved powers do not establish economic ownership or an independence assessment."
+  ],
+  "researchedAt": "2026-09-18T10:31:18.806Z",
+  "coverage": "partial",
+  "engine": "AI web research",
+  "revision": 1,
+  "id": "3ed1dea2-ca97-4b4c-ad10-89b3a272336e",
+  "publishedSnapshot": true
+}

@@ -1,0 +1,384 @@
+{
+  "query": "Le Monde",
+  "kind": "news",
+  "depth": 3,
+  "title": "Le Monde: ownership and control",
+  "rootId": "le-monde",
+  "summary": "Le Monde is a French national newspaper and digital news publication. Its publisher, Société éditrice du Monde, is 72.5% owned by Le Monde libre and 25.4% by the Pôle d’indépendance. The Fonds pour l’indépendance de la presse indirectly controls the majority holding. Separate shareholder and journalist governance rights are documented below.",
+  "nodes": [
+    {
+      "id": "le-monde",
+      "name": "Le Monde",
+      "type": "publication",
+      "description": "French national general-interest newspaper and digital news publication.",
+      "country": "France",
+      "website": "https://www.lemonde.fr/",
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Publishing entity identified in the publication’s legal notice.",
+      "image": null
+    },
+    {
+      "id": "societe-editrice-du-monde",
+      "name": "Société éditrice du Monde",
+      "type": "publisher",
+      "description": "Publisher and parent company of Groupe Le Monde; French registration number 433 891 850.",
+      "country": "France",
+      "website": "https://www.lemonde.fr/",
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Majority and minority shareholder blocs and separate governance rights are documented.",
+      "image": null
+    },
+    {
+      "id": "le-monde-libre",
+      "name": "Le Monde libre",
+      "type": "company",
+      "description": "French holding company constituted as a société en commandite simple; registration number 527 678 262.",
+      "country": "France",
+      "website": null,
+      "wikidataId": "Q55180846",
+      "endpoint": "continue",
+      "endpointNote": "Indirect fund control and registered managing general partners are identified.",
+      "image": null
+    },
+    {
+      "id": "pole-independance",
+      "name": "Pôle d’indépendance du Groupe Le Monde",
+      "type": "aggregate",
+      "description": "Shareholder bloc comprising employee societies, readers and founding-family interests.",
+      "country": "France",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "unresolved",
+      "endpointNote": "Aggregate holding and governance rights are verified; individual members’ current holdings were not established.",
+      "image": null
+    },
+    {
+      "id": "fonds-independance-presse",
+      "name": "Fonds pour l’indépendance de la presse",
+      "type": "fund",
+      "description": "Nonprofit French endowment fund holding indirect control of the group.",
+      "country": "France",
+      "website": "https://fondsindependancepresse.org/",
+      "wikidataId": null,
+      "endpoint": "depth_limit",
+      "endpointNote": "Reached at relationship level three. Its own appointment authorities are not expanded; fund status does not establish independence.",
+      "image": null
+    },
+    {
+      "id": "njj-presse",
+      "name": "NJJ Presse",
+      "type": "company",
+      "description": "Registered managing general partner of Le Monde libre.",
+      "country": "France",
+      "website": null,
+      "wikidataId": "Q67147164",
+      "endpoint": "depth_limit",
+      "endpointNote": "Reached at level three. The April 2024 acquisition announcement reports that the fund acquired 99.9% of NJJ Presse; that further ownership edge is beyond this graph’s depth.",
+      "image": null
+    },
+    {
+      "id": "le-nouveau-monde",
+      "name": "Le Nouveau Monde",
+      "type": "company",
+      "description": "Registered managing general partner of Le Monde libre.",
+      "country": "France",
+      "website": null,
+      "wikidataId": "Q67147074",
+      "endpoint": "depth_limit",
+      "endpointNote": "Reached at level three. Current ownership is not established by its registered management role.",
+      "image": null
+    },
+    {
+      "id": "societe-redacteurs-monde",
+      "name": "Société des rédacteurs du Monde",
+      "type": "company",
+      "description": "Journalists’ society with approval rights over the newspaper director’s appointment.",
+      "country": "France",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "unresolved",
+      "endpointNote": "Collective appointment rights are verified; individual membership and ownership allocations were not researched.",
+      "image": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "from": "le-monde",
+      "to": "societe-editrice-du-monde",
+      "relationship": "published_by",
+      "percentage": null,
+      "asOf": "2026-06-22",
+      "description": "The legal notice identifies SEM as the website’s publisher.",
+      "evidence": [
+        {
+          "url": "https://www.lemonde.fr/en/help/article/2026/03/19/legal-information_6751595_106.html",
+          "title": "Legal information",
+          "excerpt": "Publisher SOCIÉTE ÉDITRICE DU MONDE",
+          "sourceType": "primary",
+          "publishedAt": "2026-03-19",
+          "accessedAt": "2026-09-18T10:35:34.717Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.lemonde.fr/en/help/article/2026/03/19/legal-information_6751595_106.html"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-2",
+      "from": "societe-editrice-du-monde",
+      "to": "le-monde-libre",
+      "relationship": "owned_by",
+      "percentage": 72.5,
+      "asOf": "2026-06-10",
+      "description": "Direct majority holding, corroborated by the publisher’s governance explanation.",
+      "evidence": [
+        {
+          "url": "https://www.lemonde.fr/actualite-medias/article/2026/06/10/l-actionnariat-du-groupe-le-monde-en-2026_6700443_3236.html",
+          "title": "L’actionnariat du Groupe Le Monde en 2026",
+          "excerpt": "détient 72,5 % de notre groupe",
+          "sourceType": "primary",
+          "publishedAt": "2026-06-10",
+          "accessedAt": "2026-09-18T10:35:34.717Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.lemonde.fr/actualite-medias/article/2026/06/10/l-actionnariat-du-groupe-le-monde-en-2026_6700443_3236.html"
+        },
+        {
+          "url": "https://www.lemonde.fr/le-monde-et-vous/article/2021/01/20/le-monde-une-gouvernance-bien-definie_6066967_6065879.html",
+          "title": "« Le Monde », une gouvernance bien définie",
+          "excerpt": "La SEM est détenue à 72,5 %",
+          "sourceType": "primary",
+          "publishedAt": "2021-01-20",
+          "accessedAt": "2026-09-18T10:35:34.717Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.lemonde.fr/le-monde-et-vous/article/2021/01/20/le-monde-une-gouvernance-bien-definie_6066967_6065879.html"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-3",
+      "from": "societe-editrice-du-monde",
+      "to": "pole-independance",
+      "relationship": "owned_by",
+      "percentage": 25.4,
+      "asOf": "2026-06-10",
+      "description": "Combined holding of the internal shareholder bloc.",
+      "evidence": [
+        {
+          "url": "https://www.lemonde.fr/actualite-medias/article/2026/06/10/l-actionnariat-du-groupe-le-monde-en-2026_6700443_3236.html",
+          "title": "L’actionnariat du Groupe Le Monde en 2026",
+          "excerpt": "et en détient 25,4 %",
+          "sourceType": "primary",
+          "publishedAt": "2026-06-10",
+          "accessedAt": "2026-09-18T10:35:34.717Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.lemonde.fr/actualite-medias/article/2026/06/10/l-actionnariat-du-groupe-le-monde-en-2026_6700443_3236.html"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-4",
+      "from": "le-monde-libre",
+      "to": "fonds-independance-presse",
+      "relationship": "controlled_by",
+      "percentage": null,
+      "asOf": "2026-06-10",
+      "description": "Indirect control through holding companies, including NJJ Presse; this is not a direct equity percentage.",
+      "evidence": [
+        {
+          "url": "https://www.lemonde.fr/le-monde-et-vous/article/2021/01/27/le-monde-une-independance-editoriale-totale-et-absolue_6067813_6065879.html",
+          "title": "« Le Monde », une indépendance éditoriale totale et absolue",
+          "excerpt": "contrôlé désormais par le Fonds",
+          "sourceType": "primary",
+          "publishedAt": "2021-01-27",
+          "accessedAt": "2026-09-18T10:35:34.717Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.lemonde.fr/le-monde-et-vous/article/2021/01/27/le-monde-une-independance-editoriale-totale-et-absolue_6067813_6065879.html"
+        },
+        {
+          "url": "https://www.lemonde.fr/actualite-medias/article/2026/06/10/l-actionnariat-du-groupe-le-monde-en-2026_6700443_3236.html",
+          "title": "L’actionnariat du Groupe Le Monde en 2026",
+          "excerpt": "à travers Le Monde libre",
+          "sourceType": "primary",
+          "publishedAt": "2026-06-10",
+          "accessedAt": "2026-09-18T10:35:34.717Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.lemonde.fr/actualite-medias/article/2026/06/10/l-actionnariat-du-groupe-le-monde-en-2026_6700443_3236.html"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-5",
+      "from": "societe-editrice-du-monde",
+      "to": "pole-independance",
+      "relationship": "controlled_by",
+      "percentage": null,
+      "asOf": "2024-05-06",
+      "description": "Limited protective control: approval rights over new controlling shareholders, protected statutory rights and a first-offer right.",
+      "evidence": [
+        {
+          "url": "https://www.lemonde.fr/le-monde-et-vous/article/2021/01/27/le-monde-une-independance-editoriale-totale-et-absolue_6067813_6065879.html",
+          "title": "« Le Monde », une indépendance éditoriale totale et absolue",
+          "excerpt": "bloquer l’arrivée d’un nouvel actionnaire",
+          "sourceType": "primary",
+          "publishedAt": "2021-01-27",
+          "accessedAt": "2026-09-18T10:35:34.717Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.lemonde.fr/le-monde-et-vous/article/2021/01/27/le-monde-une-independance-editoriale-totale-et-absolue_6067813_6065879.html"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-6",
+      "from": "societe-editrice-du-monde",
+      "to": "le-monde-libre",
+      "relationship": "appointment_rights",
+      "percentage": null,
+      "asOf": null,
+      "description": "Appoints two-thirds of the supervisory board; selects management-board candidates subject to formal appointment and journalist approval requirements.",
+      "evidence": [
+        {
+          "url": "https://www.lemonde.fr/le-monde-et-vous/article/2021/01/20/le-monde-une-gouvernance-bien-definie_6066967_6065879.html",
+          "title": "« Le Monde », une gouvernance bien définie",
+          "excerpt": "pour les deux tiers",
+          "sourceType": "primary",
+          "publishedAt": "2021-01-20",
+          "accessedAt": "2026-09-18T10:35:34.717Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.lemonde.fr/le-monde-et-vous/article/2021/01/20/le-monde-une-gouvernance-bien-definie_6066967_6065879.html"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-7",
+      "from": "societe-editrice-du-monde",
+      "to": "pole-independance",
+      "relationship": "appointment_rights",
+      "percentage": null,
+      "asOf": null,
+      "description": "Appoints one-third of the supervisory board.",
+      "evidence": [
+        {
+          "url": "https://www.lemonde.fr/le-monde-et-vous/article/2021/01/20/le-monde-une-gouvernance-bien-definie_6066967_6065879.html",
+          "title": "« Le Monde », une gouvernance bien définie",
+          "excerpt": "pour un tiers",
+          "sourceType": "primary",
+          "publishedAt": "2021-01-20",
+          "accessedAt": "2026-09-18T10:35:34.717Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.lemonde.fr/le-monde-et-vous/article/2021/01/20/le-monde-une-gouvernance-bien-definie_6066967_6065879.html"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-8",
+      "from": "le-monde",
+      "to": "societe-redacteurs-monde",
+      "relationship": "appointment_rights",
+      "percentage": null,
+      "asOf": "2024-05-06",
+      "description": "The proposed newspaper director requires approval by at least 60% of voting journalists.",
+      "evidence": [
+        {
+          "url": "https://www.lemonde.fr/le-monde-et-vous/article/2021/01/27/le-monde-une-independance-editoriale-totale-et-absolue_6067813_6065879.html",
+          "title": "« Le Monde », une indépendance éditoriale totale et absolue",
+          "excerpt": "au moins 60 % des votes",
+          "sourceType": "primary",
+          "publishedAt": "2021-01-27",
+          "accessedAt": "2026-09-18T10:35:34.717Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.lemonde.fr/le-monde-et-vous/article/2021/01/27/le-monde-une-independance-editoriale-totale-et-absolue_6067813_6065879.html"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-9",
+      "from": "le-monde-libre",
+      "to": "njj-presse",
+      "relationship": "managed_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "Listed as managing general partner in reproduced registry information.",
+      "evidence": [
+        {
+          "url": "https://www.pappers.fr/entreprise/le-monde-libre-527678262",
+          "title": "Société LE MONDE LIBRE",
+          "excerpt": "Associé commandité gérant : NJJ PRESSE",
+          "sourceType": "secondary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:35:34.717Z",
+          "validation": "unavailable",
+          "httpStatus": 403
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-10",
+      "from": "le-monde-libre",
+      "to": "le-nouveau-monde",
+      "relationship": "managed_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "Listed as managing general partner in reproduced registry information.",
+      "evidence": [
+        {
+          "url": "https://www.pappers.fr/entreprise/le-monde-libre-527678262",
+          "title": "Société LE MONDE LIBRE",
+          "excerpt": "Associé commandité gérant : LE NOUVEAU MONDE",
+          "sourceType": "secondary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:35:34.717Z",
+          "validation": "unavailable",
+          "httpStatus": 403
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    }
+  ],
+  "gaps": [
+    "The reported stakes total 97.9%. The remaining 2.1% was not identified; no shareholder identity is inferred.",
+    "The June 2026 disclosure reports Prisa’s 2025 exit but a pending challenge to the transaction’s corporate resolutions. Prisa is omitted from current ownership edges.",
+    "The same disclosure reports one share retained through Xavier Niel’s NJJ Strategy. Its precise issuing entity is unclear, so no equity edge is assigned.",
+    "The fund’s April 2024 acquisition announcement establishes its ownership of NJJ Presse, but a full current capitalization table for Le Monde libre was not obtained.",
+    "The fund’s statutes and About URLs opened without usable substantive text. Current founder appointment powers were therefore not independently verified from opened page content.",
+    "The governance page displayed a relative modification date. Undated appointment observations use null rather than a guessed date.",
+    "Recent ownership searches found the June 2026 disclosure; no subsequent completed sale was established.",
+    "All findings are unreviewed. Wikidata identifiers were not verified."
+  ],
+  "researchedAt": "2026-09-18T10:35:34.717Z",
+  "coverage": "partial",
+  "engine": "AI web research",
+  "revision": 1,
+  "id": "142e624f-ba6f-4669-8e45-54dc71b39d02",
+  "publishedSnapshot": true
+}

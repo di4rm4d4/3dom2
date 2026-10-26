@@ -1,0 +1,209 @@
+{
+  "query": "Financial Times",
+  "kind": "news",
+  "depth": 3,
+  "title": "Financial Times ownership and control",
+  "rootId": "financial-times",
+  "summary": "The Financial Times is a UK-based international business and news publication. Its publisher, The Financial Times Limited, is controlled by Financial Times Group Limited, whose parent is Japan’s Nikkei Inc. Nikkei reported 100% of FT Group’s voting rights at 31 December 2025. The graph stops at Nikkei at the three-relationship limit.",
+  "nodes": [
+    {
+      "id": "financial-times",
+      "name": "Financial Times",
+      "type": "publication",
+      "description": "London-based English-language newspaper and digital news publication covering business, finance, economics and international affairs.",
+      "country": "United Kingdom",
+      "website": "https://www.ft.com/",
+      "wikidataId": "Q183399",
+      "endpoint": "continue",
+      "endpointNote": "Publishing entity identified separately from its corporate owners.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Financial_Times_corporate_logo_%28no_background%29.svg/250px-Financial_Times_corporate_logo_%28no_background%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:Financial_Times_corporate_logo_(no_background).svg",
+        "artist": "Unknown authorUnknown author; SVG version created by odder (talk)",
+        "license": "Public domain"
+      }
+    },
+    {
+      "id": "financial-times-limited",
+      "name": "The Financial Times Limited",
+      "type": "publisher",
+      "description": "UK publishing company registered under number 00227590.",
+      "country": "United Kingdom",
+      "website": "https://aboutus.ft.com/",
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Companies House identifies Financial Times Group Limited as its active corporate controller.",
+      "image": null
+    },
+    {
+      "id": "financial-times-group-limited",
+      "name": "Financial Times Group Limited",
+      "type": "company",
+      "description": "UK group company registered under number 00879531; consolidated subsidiary of Nikkei Inc.",
+      "country": "United Kingdom",
+      "website": "https://aboutus.ft.com/company",
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Parent relationship and voting control are supported by Nikkei’s 2025 annual securities report.",
+      "image": null
+    },
+    {
+      "id": "nikkei-inc",
+      "name": "Nikkei Inc.",
+      "type": "company",
+      "description": "Japanese media company, legally 株式会社日本経済新聞社, headquartered in Tokyo.",
+      "country": "Japan",
+      "website": "https://www.nikkei.co.jp/nikkeiinfo/",
+      "wikidataId": null,
+      "endpoint": "depth_limit",
+      "endpointNote": "Reached at relationship level three. Nikkei’s own shareholders are outside this graph’s depth limit; this endpoint does not establish independence.",
+      "image": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "from": "financial-times",
+      "to": "financial-times-limited",
+      "relationship": "published_by",
+      "percentage": null,
+      "asOf": "2023-10-17",
+      "description": "The newspaper’s masthead names The Financial Times Limited as publisher. The evidence is an FT issue reproduced on a third-party website.",
+      "evidence": [
+        {
+          "url": "https://anyflip.com/epvyy/jvyd/basic",
+          "title": "Financial Times Europe, 17 October 2023 — masthead",
+          "excerpt": "Published by: The Financial Times Limited",
+          "sourceType": "primary",
+          "publishedAt": "2023-10-17",
+          "accessedAt": "2026-09-18T10:29:16.605Z",
+          "validation": "unavailable",
+          "httpStatus": 403
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-2",
+      "from": "financial-times-limited",
+      "to": "financial-times-group-limited",
+      "relationship": "owned_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "The active Companies House entry records ownership of at least 75% of shares. It does not establish an exact percentage. The controller was notified on 6 April 2016.",
+      "evidence": [
+        {
+          "url": "https://find-and-update.company-information.service.gov.uk/company/00227590/persons-with-significant-control",
+          "title": "The Financial Times Limited — persons with significant control",
+          "excerpt": "Ownership of shares – 75% or more",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:29:16.605Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://find-and-update.company-information.service.gov.uk/company/00227590/persons-with-significant-control"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-3",
+      "from": "financial-times-limited",
+      "to": "financial-times-group-limited",
+      "relationship": "controlled_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "The same active register entry separately records at least 75% of voting rights held by Financial Times Group Limited.",
+      "evidence": [
+        {
+          "url": "https://find-and-update.company-information.service.gov.uk/company/00227590/persons-with-significant-control",
+          "title": "The Financial Times Limited — persons with significant control",
+          "excerpt": "Ownership of voting rights - 75% or more",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:29:16.605Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://find-and-update.company-information.service.gov.uk/company/00227590/persons-with-significant-control"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-4",
+      "from": "financial-times-group-limited",
+      "to": "nikkei-inc",
+      "relationship": "parent_company",
+      "percentage": null,
+      "asOf": "2025-12-31",
+      "description": "Nikkei’s annual securities report identifies Financial Times Group Limited as a consolidated subsidiary. FT’s current corporate website also identifies FT Group as part of Nikkei.",
+      "evidence": [
+        {
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100XTS5.pdf",
+          "title": "Nikkei Inc. — Annual Securities Report, year ended 31 December 2025",
+          "excerpt": "（連結子会社） Financial Times Group Limited",
+          "sourceType": "primary",
+          "publishedAt": "2026-03-27",
+          "accessedAt": "2026-09-18T10:29:16.605Z",
+          "validation": "document_available",
+          "httpStatus": 200,
+          "resolvedUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100XTS5.pdf"
+        },
+        {
+          "url": "https://aboutus.ft.com/company",
+          "title": "Financial Times — Company",
+          "excerpt": "The FT Group, part of Nikkei Inc.",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-18T10:29:16.605Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://aboutus.ft.com/company"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-5",
+      "from": "financial-times-group-limited",
+      "to": "nikkei-inc",
+      "relationship": "controlled_by",
+      "percentage": 100,
+      "asOf": "2025-12-31",
+      "description": "The report’s subsidiary table records 100.0% voting ownership for FT Group. This percentage represents voting rights.",
+      "evidence": [
+        {
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100XTS5.pdf",
+          "title": "Nikkei Inc. — Annual Securities Report, year ended 31 December 2025",
+          "excerpt": "新聞の発行 100.0",
+          "sourceType": "primary",
+          "publishedAt": "2026-03-27",
+          "accessedAt": "2026-09-18T10:29:16.605Z",
+          "validation": "document_available",
+          "httpStatus": 200,
+          "resolvedUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100XTS5.pdf"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    }
+  ],
+  "gaps": [
+    "Recent-sale searches found no subsequent disposal. Current FT corporate disclosures support continued Nikkei ownership, but the latest dated parent-company observation used here is 31 December 2025.",
+    "The accessible explicit publisher masthead dates from October 2023. FT legal and editorial-code pages could not be opened successfully.",
+    "The Financial Times Limited’s exact equity and voting percentages were not established; Companies House provides bands of 75% or more.",
+    "FT Group’s register states that it has no registrable person or relevant legal entity. This registration statement does not negate the Nikkei parent relationship disclosed in Nikkei’s annual report.",
+    "Nikkei’s shareholders and any separate editorial appointment rights were not mapped within the three-level limit.",
+    "No Wikidata identifiers were verified. All findings are unreviewed."
+  ],
+  "researchedAt": "2026-09-18T10:29:16.605Z",
+  "coverage": "partial",
+  "engine": "AI web research",
+  "revision": 1,
+  "id": "9260ea93-2fa2-4acd-b29e-14d78b549f44",
+  "publishedSnapshot": true
+}

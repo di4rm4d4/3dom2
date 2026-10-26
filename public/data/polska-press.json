@@ -1,0 +1,297 @@
+{
+  "query": "Polska Press",
+  "kind": "news",
+  "depth": 3,
+  "title": "Polska Press ownership and control",
+  "rootId": "polska-press",
+  "summary": "Polska Press is a Polish regional and local news publisher owned 100% by ORLEN. ORLEN’s disclosed shareholders include Poland’s State Treasury (49.90%) and Nationale-Nederlanden OFE (5.26%). The state also holds special voting and appointment rights. August 2026 reporting describes a planned sale of Polska Press, without announcing completion.",
+  "nodes": [
+    {
+      "id": "polska-press",
+      "name": "Polska Press sp. z o.o.",
+      "type": "publisher",
+      "description": "Polish publishing group operating regional and local newspapers and news websites; KRS 0000002408. The requested name identifies a publishing company rather than one newspaper.",
+      "country": "Poland",
+      "website": "https://polskapress.pl/",
+      "wikidataId": "Q11822473",
+      "endpoint": "continue",
+      "endpointNote": "Ownership traced to ORLEN.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Polska_press_grupa_miasta_na_witrynie.jpg/250px-Polska_press_grupa_miasta_na_witrynie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:Polska_press_grupa_miasta_na_witrynie.jpg",
+        "artist": "Panek",
+        "license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "id": "orlen",
+      "name": "ORLEN S.A.",
+      "type": "company",
+      "description": "Polish listed energy company and sole shareholder of Polska Press.",
+      "country": "Poland",
+      "website": "https://www.orlen.pl/",
+      "wikidataId": "Q971649",
+      "endpoint": "continue",
+      "endpointNote": "Significant disclosed shareholders and state control rights are shown.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Orlen_wordmark_logo.svg/250px-Orlen_wordmark_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:Orlen_wordmark_logo.svg",
+        "artist": "ORLEN SA",
+        "license": "Public domain"
+      }
+    },
+    {
+      "id": "polish-state-treasury",
+      "name": "Polish State Treasury",
+      "type": "state",
+      "description": "Skarb Państwa, the Polish state shareholder in ORLEN.",
+      "country": "Poland",
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "state",
+      "endpointNote": "State ownership endpoint; public officials are not personal owners of these assets.",
+      "image": null
+    },
+    {
+      "id": "nn-ofe",
+      "name": "Nationale-Nederlanden Otwarty Fundusz Emerytalny",
+      "type": "fund",
+      "description": "Polish open pension fund holding a disclosed minority interest in ORLEN.",
+      "country": "Poland",
+      "website": "https://www.nn.pl/",
+      "wikidataId": null,
+      "endpoint": "continue",
+      "endpointNote": "Fund management is traced separately from ownership of its investments.",
+      "image": null
+    },
+    {
+      "id": "orlen-other-shareholders",
+      "name": "Other ORLEN shareholders",
+      "type": "aggregate",
+      "description": "Aggregate remainder labelled Pozostali in ORLEN’s shareholder disclosure.",
+      "country": null,
+      "website": null,
+      "wikidataId": null,
+      "endpoint": "dispersed_shareholders",
+      "endpointNote": "The source aggregates these shareholders; individual holdings and ultimate beneficiaries are not established.",
+      "image": null
+    },
+    {
+      "id": "nn-pte",
+      "name": "Nationale-Nederlanden Powszechne Towarzystwo Emerytalne",
+      "type": "company",
+      "description": "Pension fund management company identified by Nationale-Nederlanden as manager of its OFE.",
+      "country": "Poland",
+      "website": "https://www.nn.pl/",
+      "wikidataId": "Q139579572",
+      "endpoint": "depth_limit",
+      "endpointNote": "Reached at relationship level three. Its corporate ownership was not traced; management does not constitute ownership of fund assets.",
+      "image": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "from": "polska-press",
+      "to": "orlen",
+      "relationship": "owned_by",
+      "percentage": 100,
+      "asOf": "2026-03-31",
+      "description": "ORLEN’s first-quarter report lists Polska Press at 100%. Register-derived information identifies ORLEN as the direct holder of all 12,000 shares. August reporting corroborates continuing ownership while a sale remains planned.",
+      "evidence": [
+        {
+          "url": "https://pap-mediaroom.pl/sites/default/files/attachments/202605/DOC.20260528.54312790.zal04_ORLEN_260528_2026kw1_-_RAPORT_IQ2026_PL.pdf",
+          "title": "Grupa ORLEN — Skonsolidowany raport kwartalny za I kwartał 2026 roku",
+          "excerpt": "Polska Press Sp. z o.o. 100% 100%",
+          "sourceType": "primary",
+          "publishedAt": "2026-05-28",
+          "accessedAt": "2026-09-17T18:49:51.268Z",
+          "validation": "document_available",
+          "httpStatus": 200,
+          "resolvedUrl": "https://pap-mediaroom.pl/sites/default/files/attachments/202605/DOC.20260528.54312790.zal04_ORLEN_260528_2026kw1_-_RAPORT_IQ2026_PL.pdf"
+        },
+        {
+          "url": "https://www.bizraport.pl/krs/0000002408/polska-press-spolka-z-ograniczona-odpowiedzialnoscia",
+          "title": "POLSKA PRESS SP. Z O.O. | KRS: 0000002408 | BizRaport",
+          "excerpt": "Orlen posiada 12 000 udziałów, które stanowią 100% firmy.",
+          "sourceType": "secondary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-17T18:49:51.268Z",
+          "validation": "unavailable",
+          "httpStatus": 429
+        },
+        {
+          "url": "https://www.press.pl/tresc/94476,orlen-twierdzi_-ze-nadal-chce-sprzedac-polska-press_-_koncern-podtrzymuje-plany_",
+          "title": "Orlen twierdzi, że nadal chce sprzedać Polska Press. \"Koncern podtrzymuje plany\"",
+          "excerpt": "Orlen podtrzymuje chęć sprzedaży Polska Press.",
+          "sourceType": "secondary",
+          "publishedAt": "2026-08-10",
+          "accessedAt": "2026-09-17T18:49:51.268Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.press.pl/tresc/94476,orlen-twierdzi_-ze-nadal-chce-sprzedac-polska-press_-_koncern-podtrzymuje-plany_"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-2",
+      "from": "orlen",
+      "to": "polish-state-treasury",
+      "relationship": "owned_by",
+      "percentage": 49.9,
+      "asOf": "2026-06-09",
+      "description": "The State Treasury holds 579,310,079 shares, representing 49.90% of capital and total voting rights.",
+      "evidence": [
+        {
+          "url": "https://www.orlen.pl/pl/o-firmie/o-spolce/organy-i-struktura-spolki/struktura-akcjonariatu",
+          "title": "Struktura akcjonariatu ORLEN S.A.",
+          "excerpt": "Skarb Państwa*",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-17T18:49:51.268Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.orlen.pl/pl/o-firmie/o-spolce/organy-i-struktura-spolki/struktura-akcjonariatu"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-3",
+      "from": "orlen",
+      "to": "nn-ofe",
+      "relationship": "owned_by",
+      "percentage": 5.26,
+      "asOf": "2026-06-09",
+      "description": "The pension fund holds 61,070,000 shares, representing 5.26% of capital and total voting rights.",
+      "evidence": [
+        {
+          "url": "https://www.orlen.pl/pl/o-firmie/o-spolce/organy-i-struktura-spolki/struktura-akcjonariatu",
+          "title": "Struktura akcjonariatu ORLEN S.A.",
+          "excerpt": "Nationale-Nederlanden OFE*",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-17T18:49:51.268Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.orlen.pl/pl/o-firmie/o-spolce/organy-i-struktura-spolki/struktura-akcjonariatu"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-4",
+      "from": "orlen",
+      "to": "orlen-other-shareholders",
+      "relationship": "owned_by",
+      "percentage": 44.84,
+      "asOf": "2026-06-09",
+      "description": "The disclosed remainder comprises 520,561,970 shares and the same number of votes, or 44.84%.",
+      "evidence": [
+        {
+          "url": "https://www.orlen.pl/pl/o-firmie/o-spolce/organy-i-struktura-spolki/struktura-akcjonariatu",
+          "title": "Struktura akcjonariatu ORLEN S.A.",
+          "excerpt": "Pozostali",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-17T18:49:51.268Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.orlen.pl/pl/o-firmie/o-spolce/organy-i-struktura-spolki/struktura-akcjonariatu"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-5",
+      "from": "orlen",
+      "to": "polish-state-treasury",
+      "relationship": "controlled_by",
+      "percentage": null,
+      "asOf": null,
+      "description": "ORLEN describes special state control powers. Its general 10% voting cap exempts the State Treasury and state subsidiaries. This edge records those legal privileges rather than an additional equity interest.",
+      "evidence": [
+        {
+          "url": "https://raportroczny.orlen.pl/en/management-report/our-company/capital-markets/",
+          "title": "Capital Markets — ORLEN Report",
+          "excerpt": "The cap on voting rights does not apply to the State Treasury",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-17T18:49:51.268Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://raportroczny.orlen.pl/en/management-report/our-company/capital-markets/"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-6",
+      "from": "orlen",
+      "to": "polish-state-treasury",
+      "relationship": "appointment_rights",
+      "percentage": null,
+      "asOf": null,
+      "description": "The State Treasury can appoint and remove one Supervisory Board member and appoint one Management Board member.",
+      "evidence": [
+        {
+          "url": "https://raportroczny.orlen.pl/en/management-report/our-company/capital-markets/",
+          "title": "Capital Markets — ORLEN Report",
+          "excerpt": "appoint one member of the Management Board",
+          "sourceType": "primary",
+          "publishedAt": null,
+          "accessedAt": "2026-09-17T18:49:51.268Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://raportroczny.orlen.pl/en/management-report/our-company/capital-markets/"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    },
+    {
+      "id": "edge-7",
+      "from": "nn-ofe",
+      "to": "nn-pte",
+      "relationship": "managed_by",
+      "percentage": null,
+      "asOf": "2025-12-31",
+      "description": "Nationale-Nederlanden’s May 2026 article identifies its PTE as the OFE’s manager when discussing year-end 2025 fund data.",
+      "evidence": [
+        {
+          "url": "https://www.nn.pl/blog/posts/2026/co-to-jest-dobrowolny-fundusz-emerytalny",
+          "title": "Dobrowolny Fundusz Emerytalny (DFE) – co to jest i jak działa?",
+          "excerpt": "zarządzany przez to towarzystwo Nationale-Nederlanden OFE",
+          "sourceType": "primary",
+          "publishedAt": "2026-05-28",
+          "accessedAt": "2026-09-17T18:49:51.268Z",
+          "validation": "excerpt_found",
+          "httpStatus": 200,
+          "resolvedUrl": "https://www.nn.pl/blog/posts/2026/co-to-jest-dobrowolny-fundusz-emerytalny"
+        }
+      ],
+      "status": "pending",
+      "reviewedAt": null
+    }
+  ],
+  "gaps": [
+    "Polska Press denotes the publishing group, not an individual news title; the root therefore uses the publisher entity.",
+    "No completed sale was found in the searches. The latest opened sale reporting is dated 10 August 2026; subsequent changes remain possible.",
+    "Polska Press’s corporate pages and an ownership masthead failed to open. Direct ownership was corroborated with a register-derived secondary source rather than an official current KRS extract.",
+    "The ownership observations have different dates. ORLEN’s shareholder page explicitly references 9 June 2026; the opened primary Polska Press percentage is from the first-quarter 2026 report.",
+    "The annual-report control page does not give a precise observation date. An opened 17 August 2026 statutory-change notice concerned business activities, but the consolidated statute attachment was not inspected.",
+    "The fund manager is the third relationship level; its shareholders and the pension fund’s individual beneficiaries were not traced. Wikidata identifiers were not verified."
+  ],
+  "researchedAt": "2026-09-17T18:49:51.268Z",
+  "coverage": "partial",
+  "engine": "AI web research",
+  "revision": 8,
+  "id": "1bb9fcc1-6da1-4289-b1b5-a102f322e9f7",
+  "publishedSnapshot": true
+}
